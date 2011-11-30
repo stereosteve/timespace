@@ -3,16 +3,9 @@ var express = require('express')
   , routes = require('./routes')
   , stylus = require('stylus')
   , stitch = require('stitch')
+  , stitchPackage = require('./pkg').stitchPackage
 
 var app = module.exports = express.createServer();
-
-// Stitch javascript package
-var stitchPackage = stitch.createPackage({
-  paths: [
-    'assets/javascripts',
-    'assets/vendor'
-  ]
-})
 
 
 // Configuration
