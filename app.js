@@ -9,10 +9,8 @@ var app = module.exports = express.createServer();
 // Stitch javascript package
 var stitchPackage = stitch.createPackage({
   paths: [
-    'assets/javascripts'
-  ],
-  dependencies: [
-    'assets/vendor/moment.js'
+    'assets/javascripts',
+    'assets/vendor'
   ]
 })
 
