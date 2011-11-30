@@ -22,6 +22,12 @@
   dots have short name and time next to them
   hover to see more details
 
+  * moment.js
+  * Timespine.CoffeeKupView
+  * stitch
+
+  * look at antiscroll
+
 ## Prior art
 
   - TimeGlider

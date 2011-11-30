@@ -1,13 +1,21 @@
 
-/**
- * Module dependencies.
- */
-
 var express = require('express')
   , routes = require('./routes')
   , stylus = require('stylus')
+  , stitch = require('stitch')
 
 var app = module.exports = express.createServer();
+
+// Stitch javascript package
+var stitchPackage = stitch.createPackage({
+  paths: [
+    'assets/javascripts'
+  ],
+  dependencies: [
+    'assets/vendor/moment.js'
+  ]
+})
+
 
 // Configuration
 
@@ -28,6 +36,8 @@ app.configure(function(){
                   .set('compress', true);
                 }
   }));
+
+  app.get('/app.js', stitchPackage.createServer());
 
   app.use(express.static(__dirname + '/public'));
 });
