@@ -3,11 +3,12 @@ var stitch = require('stitch')
 var stitchPackage = stitch.createPackage({
   paths: [
     __dirname + '/client/app',
-    __dirname + '/client/vendor/modules'
+    __dirname + '/client/modules'
   ],
   dependencies: [
-    __dirname + '/client/vendor/dependencies/jquery.js',
-    __dirname + '/client/vendor/dependencies/coffeekup.js'
+    __dirname + '/public/vendor/js/jquery.js',
+    __dirname + '/public/vendor/js/jqueryui.js',
+    __dirname + '/public/vendor/js/coffeekup.js'
   ]
 })
 

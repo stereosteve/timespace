@@ -17,5 +17,4 @@ Position DOM elements temporally.
   - TimeGlider
   - Dipity
   - Simile Timeline Widget
-
   - antiscroll - slick viewport implementation
