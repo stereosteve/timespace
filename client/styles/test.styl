@@ -4,26 +4,20 @@ body
   margin: 0
 
 .TimeGrid
+  position relative
   background #f7f7f7
-  //width 700px
   height 2500px
 
-  position relative
-
-  .line
+  .TimeAxis
     position relative
-    width 3px
-    margin-left -1px
     height 100%
-    background green
-    left 50%
+    width: 100px
+    background: #ccc
+    border-right 1px solid #333
 
   .TimePoint
-    width 10px
-    height 10px
-    background #222
-    margin -5px auto auto -5px
-
     position absolute
     top 150px
-    left 50%
+    border-top: 1px solid #333
+    margin-left: 100px
+    padding: 10px
