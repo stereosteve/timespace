@@ -4,6 +4,10 @@ var stitchPackage = stitch.createPackage({
   paths: [
     __dirname + '/client/app',
     __dirname + '/client/vendor'
+  ],
+  dependencies: [
+    __dirname + '/client/deps/jquery.js',
+    __dirname + '/client/deps/coffeekup.js'
   ]
 })
 
