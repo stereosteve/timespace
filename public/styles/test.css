@@ -1,4 +1,4 @@
-body{color:#555}
-.timeline_viewport{background:#f7f7f7;height:2500px;position:relative;}
-.timeline_viewport .line{position:relative;width:3px;margin-left:-1px;height:100%;background:#008000;left:50%}
-.timeline_viewport .dot{width:10px;height:10px;background:#222;margin:-5px auto auto -5px;position:absolute;top:150px;left:50%}
+body{color:#555;padding:0;margin:0}
+.TimeGrid{background:#f7f7f7;height:2500px;position:relative;}
+.TimeGrid .line{position:relative;width:3px;margin-left:-1px;height:100%;background:#008000;left:50%}
+.TimeGrid .dot{width:10px;height:10px;background:#222;margin:-5px auto auto -5px;position:absolute;top:150px;left:50%}
