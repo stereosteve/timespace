@@ -1,8 +1,9 @@
-# Steps
+# TimeSpace
 
-  - seed json files with various timeline data
-  - Backbone client to load the json and draw timeline
+Position DOM elements temporally.
 
+    npm install
+    node app.js
 
 ## Example Timelines
 
@@ -11,27 +12,10 @@
   - Days: Apollo 13
   - Hours: Football game
 
-## Where to start
-
-  vertical line running down page
-  height of container is `timeline.duration * SCALE`
-  
-  container is fixed position to 0 40
-  dots are absolute positioned `event.timestamp * SCALE`
-
-  dots have short name and time next to them
-  hover to see more details
-
-  * moment.js
-  * Timespine.CoffeeKupView
-  * stitch
-
-  * look at antiscroll
-
 ## Prior art
 
   - TimeGlider
   - Dipity
   - Simile Timeline Widget
 
-
+  - antiscroll - slick viewport implementation

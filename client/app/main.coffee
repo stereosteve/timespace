@@ -139,8 +139,4 @@ $ ->
   steveTimeline.render()
   $('body').html steveTimeline.el
 
-  window.birth = lifeOfSteve.events.last()
-
-  console.log lifeOfSteve.scale()
-  console.log birth.diff() * lifeOfSteve.scale()
 
