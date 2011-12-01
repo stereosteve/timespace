@@ -18,7 +18,7 @@ app.configure(function(){
   app.use(app.router);
 
   app.use(stylus.middleware({
-      src: __dirname + '/assets' 
+      src: __dirname + '/client' 
     , dest: __dirname + '/public' 
     , compile: function(str, path) {
                   return stylus(str)
@@ -28,7 +28,7 @@ app.configure(function(){
                 }
   }));
 
-  app.get('/app.js', stitchPackage.createServer());
+  app.get('/client.js', stitchPackage.createServer());
 
   app.use(express.static(__dirname + '/public'));
 });

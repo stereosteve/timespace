@@ -2,8 +2,8 @@ var stitch = require('stitch')
 
 var stitchPackage = stitch.createPackage({
   paths: [
-    __dirname + '/assets/javascripts',
-    __dirname + '/assets/vendor'
+    __dirname + '/client/app',
+    __dirname + '/client/vendor'
   ]
 })
 
