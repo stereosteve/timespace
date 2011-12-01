@@ -1,4 +1,4 @@
 body{color:#555;padding:0;margin:0}
-.TimeGrid{position:relative;background:#f7f7f7;height:2500px;}
-.TimeGrid .TimeAxis{position:relative;height:100%;width:100px;background:#ccc;border-right:1px solid #333}
-.TimeGrid .TimePoint{position:absolute;top:150px;border-top:1px solid #333;margin-left:100px;padding:10px}
+.Timeline{position:relative;background:#f7f7f7;height:2500px;}
+.Timeline .TimeAxis{position:relative;height:100%;width:100px;background:#ccc;border-right:1px solid #333}
+.Timeline .TimePoint{position:absolute;top:150px;border-top:1px solid #333;margin-left:100px;padding:10px}
