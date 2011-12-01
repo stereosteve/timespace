@@ -8,6 +8,14 @@ class Event extends Backbone.Model
 
   initialize: ->
     @time = moment(@get('time'))
+    @timeline = @get('timeline')
+
+  diff: ->
+    @time.diff(@timeline.startDate)
+
+  yPosition: ->
+    @timeline.yPositionForTime(@time)
+
 
 #### Timeline
 # Holds the events and does all the date math
@@ -21,12 +29,19 @@ class Timeline extends Backbone.Model
     @height = 2500
 
   addEvent: (opts) ->
+    opts.timeline = @
     @events.add new Event(opts)
 
-  positionFor: (time) ->
-    diff = time.diff(@startDate)
-    return ~~((diff / @duration) * @height)
+  scale: ->
+    @height / @duration
 
+  yPositionForTime: (time) ->
+    time = moment(time)
+    diff = time.diff(@startDate)
+    return ~~(diff * @scale())
+
+  years: ->
+    [@startDate.year() .. @endDate.year()]
 
 
 
@@ -42,28 +57,28 @@ class TimePoint extends Backbone.View
   className: 'TimePoint'
 
   initialize: (options) ->
+    @event = @model
     @parent = options.parent
 
   tmpl: ->
     div '.title', @event.get('title')
-
-  setY: (y) ->
-    @$(@el).css 'top', y
+    div @event.time.format("YYYY MM DD")
 
   render: =>
-    @$(@el).html CoffeeKup.render(@tmpl, {event: @model})
+    $el = @$(@el)
+    $el.html CoffeeKup.render(@tmpl, {event: @event})
+    $el.attr('data-time', @event.time)
+    $el.attr('data-title', @event.get('title'))
     @
 
-#### TimeAxis
-# The ruler on the left hand side
-class TimeAxis extends Backbone.View
-  className: 'TimeAxis'
 
-  initialize: (options) ->
-    @parent = options.parent
-
-  render: =>
-    @
+class Axis extends Backbone.View
+  className: 'Axis'
+  initialize: (opts) ->
+    @timeline = opts.timeline
+    for year in @timeline.years()
+      mmt = moment([year])
+      @$(@el).append("<div class='AxisLabel' data-time='#{mmt}'>#{year}</div>")
 
 
 #### TimelineView
@@ -75,19 +90,27 @@ class TimelineView extends Backbone.View
   children: []
 
   initialize: (options) ->
-    @axis = new TimeAxis({parent: @}).render()
-    for event in @model.events.models
+    @timeline = @model
+    @axis = new Axis({timeline: @timeline})
+    for event in @timeline.events.models
       @children.push new TimePoint({model: event, parent: @})
-    
-  tmpl: ->
 
   render: =>
-    @$(@el).html CoffeeKup.render(@tmpl, {})
-    @$(@el).append @axis.el
+    $el = @$(@el)
+    $el.attr('data-startDate', @timeline.startDate)
+    $el.append @axis.el
     for point in @children
       $(@el).append(point.render().el)
-      point.setY( @model.positionFor(point.model.time) )
+    @redraw()
     @
+
+  redraw: =>
+    $el = @$(@el)
+    @$("[data-time]").each (i, child) =>
+      child = $(child)
+      time = child.data('time')
+      yPos = @timeline.yPositionForTime(time)
+      child.css 'top', yPos
 
 
 $ ->
@@ -115,4 +138,9 @@ $ ->
   steveTimeline = new TimelineView({model: lifeOfSteve})
   steveTimeline.render()
   $('body').html steveTimeline.el
+
+  window.birth = lifeOfSteve.events.last()
+
+  console.log lifeOfSteve.scale()
+  console.log birth.diff() * lifeOfSteve.scale()
 
