@@ -32,6 +32,10 @@ class Timeline extends Backbone.Model
     opts.timeline = @
     @events.add new Event(opts)
 
+  setHeight: (height) ->
+    @height = height
+    @trigger('redraw')
+
   scale: ->
     @height / @duration
 
@@ -94,6 +98,7 @@ class TimelineView extends Backbone.View
     @axis = new Axis({timeline: @timeline})
     for event in @timeline.events.models
       @children.push new TimePoint({model: event, parent: @})
+    @timeline.bind('redraw', @redraw)
 
   render: =>
     $el = @$(@el)
@@ -105,7 +110,9 @@ class TimelineView extends Backbone.View
     @
 
   redraw: =>
+    console.log "TimelineView redraw"
     $el = @$(@el)
+    $el.css 'height', @timeline.height
     @$("[data-time]").each (i, child) =>
       child = $(child)
       time = child.data('time')
