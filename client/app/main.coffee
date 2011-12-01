@@ -78,11 +78,37 @@ class TimePoint extends Backbone.View
 
 class Axis extends Backbone.View
   className: 'Axis'
+
+  showYears: true
+  showHalfYears: true
+  showMonths: false
+
   initialize: (opts) ->
     @timeline = opts.timeline
-    for year in @timeline.years()
-      mmt = moment([year])
-      @$(@el).append("<div class='AxisLabel' data-time='#{mmt}'>#{year}</div>")
+    @render()
+
+  render: ->
+    $el = @$(@el)
+    if @showYears
+      mmt = moment(@timeline.startDate)
+      while mmt < @timeline.endDate
+        $el.append("<div class='AxisLabel year' data-time='#{mmt}'>#{mmt.year()}</div>")
+        mmt.add('years', 1)
+
+    if @showHalfYears
+      mmt = moment([@timeline.startDate.year(), 6])
+      while mmt < @timeline.endDate
+        $el.append("<div class='AxisLabel halfYear' data-time='#{mmt}'>#{mmt.format('MMMM')}</div>")
+        mmt.add('years', 1)
+
+
+    if @showMonths
+      mmt = moment(@timeline.startDate)
+      while mmt < @timeline.endDate
+        unless mmt.month() == 0
+          $el.append("<div class='AxisLabel month' data-time='#{mmt}'>#{mmt.format('MMMM')}</div>")
+        mmt.add('months', 1)
+    @
 
 
 
@@ -103,7 +129,26 @@ class TimelineView extends Backbone.View
 
   tmpl: ->
     div '.controls', ->
+      div '.currentScale', 0
       div '.scale-slider', ''
+      ul '.scaleTo', ->
+        li '.century', 'Century'
+        li '.decade', 'Decade'
+        li '.year', 'Year'
+        li '.month', 'Month'
+        li '.week', 'Week'
+        li '.day', 'Day'
+
+  events:
+    'click .scaleTo': 'changeScale'
+
+  changeScale: (ev) ->
+    to = $(ev.target).attr('class')
+    debugger
+    if to == 'decade'
+      @timeline.setHeight(1850)
+    else if to == 'year'
+      @timeline.setHeight(10000)
 
   render: =>
     $el = @$(@el)
@@ -122,6 +167,7 @@ class TimelineView extends Backbone.View
   redraw: =>
     $el = @$(@el)
     $el.css 'height', @timeline.height
+    @$('.currentScale').text @timeline.height
     @$("[data-time]").each (i, child) =>
       child = $(child)
       time = child.data('time')
