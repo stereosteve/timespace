@@ -3,5 +3,6 @@ body{color:#555}
 .Timeline{position:relative;background:#f7f7f7;}
 .Timeline .Axis{height:100%;width:100px;background:#ccc;border-right:1px solid #333;}
 .Timeline .Axis .AxisLabel{position:absolute;width:100px;text-align:center;font-weight:bold}
+.Timeline .controls{position:fixed;top:0;right:0;width:200px;height:200px;padding:10px;background:#ccf}
 .Timeline .TimePoint{position:absolute;border-top:1px solid #333;margin-left:100px;padding:10px;}
 .Timeline .TimePoint .title{font-weight:bold}

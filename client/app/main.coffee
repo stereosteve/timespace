@@ -85,6 +85,7 @@ class Axis extends Backbone.View
       @$(@el).append("<div class='AxisLabel' data-time='#{mmt}'>#{year}</div>")
 
 
+
 #### TimelineView
 # Contains TimeAxis and an array of TimePoints
 class TimelineView extends Backbone.View
@@ -100,8 +101,17 @@ class TimelineView extends Backbone.View
       @children.push new TimePoint({model: event, parent: @})
     @timeline.bind('redraw', @redraw)
 
+  tmpl: ->
+    div '.controls', ->
+      div '.scale-slider', ''
+
   render: =>
     $el = @$(@el)
+    $el.html CoffeeKup.render(@tmpl)
+    @$(".scale-slider").slider
+      min: 100
+      max: 10000
+      slide: (e, ui) => @timeline.setHeight(ui.value)
     $el.attr('data-startDate', @timeline.startDate)
     $el.append @axis.el
     for point in @children
@@ -110,7 +120,6 @@ class TimelineView extends Backbone.View
     @
 
   redraw: =>
-    console.log "TimelineView redraw"
     $el = @$(@el)
     $el.css 'height', @timeline.height
     @$("[data-time]").each (i, child) =>
