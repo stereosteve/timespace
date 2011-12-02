@@ -55,12 +55,13 @@ class EventCollection extends Backbone.Collection
 # Mission Control
 #
 
-#### TimeGeometry
-class TimeGeometry extends Backbone.Model
+#### Switchboard
+class Switchboard extends Backbone.Model
 
   initialize: ->
-    @secondsPerPixel = 1000
-    @events = @get('events')
+    @secondsPerPixel = 100000000
+    @events = @get('events').events
+
     # store wrapped window object
     @window = $(window)
     @windowResized()
@@ -103,7 +104,6 @@ class TimeGeometry extends Backbone.Model
 
 
 
-
 ####
 #### Views
 ####
@@ -136,7 +136,8 @@ class TimelineView extends Backbone.View
   className: 'TimelineView'
 
   initialize: (opts) ->
-    @events = @collection
+    @switchboard = opts.switchboard
+    @events = @switchboard.events
     @eventViews = @events.map (event) ->
       new EventView(model: event).render()
 
@@ -149,20 +150,33 @@ class TimelineView extends Backbone.View
     @
   
   redraw: =>
-    $el = @$(@el)
+    @$(@el).height( @switchboard.diffToPixels(@switchboard.events.diff))
 
     # TODO: move this to TimeGeometry?
-    - if false
-      @$("[data-time]").each (i, child) =>
+    - if true
+      @$(".EventView").each (i, child) =>
         child = $(child)
         time = child.data('time')
-        yPos = @timeToPosition(time)
+        yPos = @switchboard.timeToPosition(time)
         child.css 'top', yPos
     
 
 
-#### Main
+#### Timespace
 
+class Timespace extends Backbone.View
+  
+  initialize: (events) ->
+    @events = events
+    @switchboard = new Switchboard(events: events)
+    @timeline = new TimelineView(switchboard: @switchboard)
+  
+  render: =>
+    @$(@el).append(@timeline.render().el)
+    @
+
+
+#### Main
 $ ->
   lifeOfSteve = new EventCollection
   
@@ -182,17 +196,12 @@ $ ->
     title: "Graduated from Gilman High School"
     time: [2002, 5]
 
-  window.timeline = new TimelineView(collection: lifeOfSteve).render()
-  $('body').html timeline.el
-
-
-  $(window).scroll (ev) ->
-    pos = $(window).scrollTop()
-    topDate = timeline.positionToTime(pos)
-    #console.log topDate.format("LL")
+  window.timespace = new Timespace(events: lifeOfSteve)
+  $('body').html timespace.el
+  timespace.render()
 
   
-  geometry = new TimeGeometry({events: lifeOfSteve})
-  geometry.setScreenDiff( diffFor('years', 2) )
-  console.log geometry.secondsPerPixel
+  switchboard = new Switchboard(events: lifeOfSteve)
+  switchboard.setScreenDiff( diffFor('years', 2) )
+  #console.log switchboard.secondsPerPixel
 
