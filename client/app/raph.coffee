@@ -30,6 +30,8 @@ class Controls extends Backbone.View
       li '.months', 'Month'
       li '.weeks', 'Week'
       li '.days', 'Day'
+      li '.hours', 'Hour'
+      li '.minutes', 'Minute'
   
   events:
     "click li": "setScale"
@@ -41,8 +43,8 @@ class Controls extends Backbone.View
     else if unit is 'decade'
       diff = getDiff('years', 10)
     else
-      diff = getDiff(unit, 1)
-      
+      diff = getDiff(unit, 2)
+
     @axis.setScreenDiff(diff)
     console.log @axis.spp
     @$('.slider').slider('value', @axis.spp)
@@ -50,10 +52,13 @@ class Controls extends Backbone.View
   render: =>
     @$(@el).html CoffeeKup.render(@tmpl)
     @$('.slider').slider
+      max: 30
+      step: 0.01
       slide: (e, ui) =>
-        console.log ui.value
-        #@axis.spp = v
-        #@axis.redraw()
+        v = Math.floor(Math.exp(ui.value))
+        #console.log v
+        @axis.spp = v
+        @axis.redraw()
     @
 
 
@@ -125,6 +130,14 @@ class Axis extends Backbone.View
     if @screenDiff('days') < 80
       @drawLabels('days', 'dddd', 20)
 
+    if @screenDiff('hours') < 80
+      @drawLabels('hours', 'H', 20)
+    
+    if @screenDiff('minutes') < 100
+      @drawLabels('minutes', '', 20)
+    
+    if @screenDiff('seconds') < 100
+      @drawLabels('seconds', '', 20)
 
 
 
