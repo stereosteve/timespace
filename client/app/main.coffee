@@ -2,6 +2,16 @@ _ = require('underscore')
 Backbone = require('backbone')
 moment = require('moment')
 
+# takes a diff in seconds and returns in minutes, hours, days, weeks, etc
+convertSeconds = (seconds, output) ->
+  now = moment()
+  moment(now+seconds).diff(now, output)
+
+#class Span
+#  initialize: (seconds) ->
+#    @seconds = seconds
+  
+
 #### Event
 class Event extends Backbone.Model
 
@@ -52,16 +62,22 @@ class EventView extends Backbone.View
 class AxisView extends Backbone.View
   className: 'AxisView'
 
-  showYears: true
-  showHalfYears: true
-  showMonths: false
-
   initialize: (opts) ->
     @timeline = opts.timeline
     @render()
+  
+  drawLabels: (unit, format) =>
+    mmt = moment([@timeline.startDate().year()])
+    while mmt < @timeline.endDate()
+      @$(@el).append("<div class='AxisLabel #{unit}' data-time='#{mmt}'>#{mmt.format(format)}</div>")
+      mmt.add(unit, 1)
 
-  render: ->
+  render: =>
     $el = @$(@el)
+    
+    @drawLabels('years', 'YYYY')
+    #@drawLabels('months', 'MMMM')
+
     @
   
 
@@ -90,6 +106,14 @@ class TimelineView extends Backbone.View
     @height / @events.duration()
 
 
+  startDate: ->
+    @events.startDate()
+  
+  endDate: ->
+    @events.endDate()
+  
+  duration: ->
+    @events.duration()
   
   # takes a Seconds diff and returns a span of pixels
   diffToPixels: (diff) =>
@@ -97,25 +121,19 @@ class TimelineView extends Backbone.View
 
   # takes a span of pixels and converts to Seconds diff
   pixelsToDiff: (pixels) =>
-    Math.floor(pixels / @height * @events.duration())
+    Math.floor(pixels / @height * @duration())
 
 
   # takes a absolute time and returns the position
   timeToPosition: (time) =>
     time = moment(time)
-    @diffToPixels(time.diff(@events.startDate()))
+    @diffToPixels(time.diff(@startDate()))
   
   # takes a y coordinate and returns the time
   positionToTime: (y) =>
     diff = @pixelsToDiff(y)
-    moment(@events.startDate() + diff)
+    moment(@startDate() + diff)
   
-
-  # takes a diff in seconds and returns in minutes, hours, days, weeks, etc
-  convertDiff: (d, output) =>
-    now = moment()
-    moment(now+d).diff(now, output)
-
   
   render: =>
     $el = @$(@el)
@@ -173,7 +191,7 @@ $ ->
 
   console.log "ticks"
   screenDiff = timeline.pixelsToDiff($(window).height())
-  console.log timeline.convertDiff(screenDiff, 'years')
+  console.log convertSeconds(screenDiff, 'years')
 
 
   $(window).scroll (ev) ->
