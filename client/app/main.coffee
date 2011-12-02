@@ -96,7 +96,7 @@ class AxisView extends Backbone.View
       @hideLabels('months')
     
     # TODO: This is super slow - dont add thousands of elements to the dom like this
-    if @timeline.screenDiff('days') < 40
+    if @timeline.screenDiff('days') < 30
       @showLabels('days', 'dddd')
     else
       @hideLabels('days')
@@ -130,7 +130,8 @@ class TopbarView extends Backbone.View
   render: =>
     @$(@el).html CoffeeKup.render(@tmpl)
     @$('.slider').slider
-      value: 50
+      value: 500
+      max: 1000
       slide: (e, ui) =>
         #console.log ui.value
         @timeline.setHeight(ui.value * 1000)

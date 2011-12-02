@@ -11,6 +11,7 @@ Position DOM elements temporally.
   - Months: Presidential elections - separate timeline for each candidate
   - Days: Apollo 13
   - Hours: Football game
+  - Seconds: Tweets yo
 
 ## Prior art
 
