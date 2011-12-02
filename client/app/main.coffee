@@ -2,15 +2,25 @@ _ = require('underscore')
 Backbone = require('backbone')
 moment = require('moment')
 
+#
+# Helpers
+#
+
 # takes a diff in seconds and returns in minutes, hours, days, weeks, etc
 convertDiff = (seconds, output) ->
   now = moment()
   moment(now+seconds).diff(now, output)
 
-#class Span
-#  initialize: (seconds) ->
-#    @seconds = seconds
-  
+# takes ('months', 3) and converts to a diff
+diffFor = (unit, value) ->
+  now = moment()
+  next = now.clone().add(unit, value)
+  next.diff(now)
+
+
+#
+# Models
+#
 
 #### Event
 class Event extends Backbone.Model
@@ -19,21 +29,80 @@ class Event extends Backbone.Model
     @time = moment(@get('time'))
 
 
+
+#
+# Collections
+#
+
 #### EventCollection
 class EventCollection extends Backbone.Collection
   model: Event
 
+  initialize: ->
+    @bind('add', @changed)
+
+  changed: =>
+    @startDate = @sorted().first().time
+    @endDate = @sorted().last().time
+    @diff = @endDate.diff(@startDate)
+
   sorted: ->
     new EventCollection(@sortBy (event) -> event.time)
 
-  startDate: ->
-    @sorted().first().time
-  
-  endDate: ->
-    @sorted().last().time
 
-  duration: ->
-    @endDate().diff(@startDate())
+
+#
+# Mission Control
+#
+
+#### TimeGeometry
+class TimeGeometry extends Backbone.Model
+
+  initialize: ->
+    @secondsPerPixel = 1000
+    @events = @get('events')
+    # store wrapped window object
+    @window = $(window)
+    @windowResized()
+    $(window).bind 'resize', @windowResized
+  
+  windowResized: (ev) =>
+    @windowHeight = @window.height()
+    @centerLine = @windowHeight / 2
+    @trigger('windowResized')
+
+  # takes a Seconds diff and returns a span of pixels
+  diffToPixels: (diff) =>
+    ~~ (diff / @secondsPerPixel) 
+
+  # takes a span of pixels and converts to Seconds diff
+  pixelsToDiff: (pixels) =>
+    Math.floor(pixels * @secondsPerPixel)
+
+
+  # takes a absolute time and returns the position
+  timeToPosition: (time) =>
+    time = moment(time)
+    @diffToPixels(time.diff(@events.startDate))
+  
+  # takes a y coordinate and returns the time
+  positionToTime: (y) =>
+    diff = @pixelsToDiff(y)
+    moment(@events.startDate + diff)
+  
+  # returns the diff for the screen hieght - ie how many seconds are showing
+  # pass 'years, months, weeks, days' if you dont want seconds
+  screenDiff: (unit) =>
+    d = @pixelsToDiff(@windowHeight)
+    d = convertDiff(d, unit) if unit?
+    d
+
+  setScreenDiff: (diff) =>
+    @secondsPerPixel = Math.floor(diff / @windowHeight)
+    #@redraw()
+
+
+
 
 ####
 #### Views
@@ -58,84 +127,9 @@ class EventView extends Backbone.View
     $el.attr('data-title', @event.get('title'))
     @
 
-#### AxisView
-class AxisView extends Backbone.View
-  className: 'AxisView'
-
-  initialize: (opts) ->
-    @timeline = opts.timeline
-    @visibleLabels = {}
-    @render()
-    
-  
-
-  showLabels: (unit, format) =>
-    #debugger
-    return if @visibleLabels[unit]
-    @visibleLabels[unit] = true
-    console.log "showing #{unit}"
-    mmt = moment([@timeline.startDate().year()])
-    while mmt < @timeline.endDate()
-      @$(@el).append("<div class='AxisLabel #{unit}' data-time='#{mmt}'>#{mmt.format(format)}</div>")
-      mmt.add(unit, 1)
-  
-  hideLabels: (unit) =>
-    return unless @visibleLabels[unit]
-    @$(".#{unit}").remove()
-    console.log "hiding #{unit}"
-    @visibleLabels[unit] = false
-
-  render: =>
-    $el = @$(@el)
-    
-    @showLabels('years', 'YYYY')
-    
-    if @timeline.screenDiff('months') < 20
-      @showLabels('months', 'MMMM')
-    else
-      @hideLabels('months')
-    
-    # TODO: This is super slow - dont add thousands of elements to the dom like this
-    if @timeline.screenDiff('days') < 30
-      @showLabels('days', 'dddd')
-    else
-      @hideLabels('days')
-
-    @
-  
-
-#### MinimapView
-class MinimapView extends Backbone.View
-  className: 'MinimapView'
-
-  initialize: (opts) ->
-    @timeline = opts.timeline
-    @render()
 
 
-#### TopbarView
-class TopbarView extends Backbone.View
-  className: 'TopbarView'  
 
-  initialize: (opts) ->
-    @timeline = opts.timeline
-    @render()
-
-  tmpl: ->
-    div '.controls', ->
-      div '.slider', ''
-    h1 "Welcome"
-
-  
-  render: =>
-    @$(@el).html CoffeeKup.render(@tmpl)
-    @$('.slider').slider
-      value: 500
-      max: 1000
-      slide: (e, ui) =>
-        #console.log ui.value
-        @timeline.setHeight(ui.value * 1000)
-    @
 
 #### TimelineView
 class TimelineView extends Backbone.View
@@ -145,64 +139,10 @@ class TimelineView extends Backbone.View
     @events = @collection
     @eventViews = @events.map (event) ->
       new EventView(model: event).render()
-    
-    @axis = new AxisView(timeline: @)
-    @minimap = new MinimapView(timeline: @)
-    @topbar = new TopbarView(timeline: @)
 
-    @axisRedraw = _.throttle(@axis.render, 500)
-
-    @height = 2500
-
-  
-
-  setHeight: (height) ->
-    @height = height
-    @trigger('redraw')
-    @redraw()
-
-  scale: ->
-    @height / @events.duration()
-
-
-  startDate: ->
-    @events.startDate()
-  
-  endDate: ->
-    @events.endDate()
-  
-  duration: ->
-    @events.duration()
-  
-  # takes a Seconds diff and returns a span of pixels
-  diffToPixels: (diff) =>
-    Math.floor(diff * @scale())  
-
-  # takes a span of pixels and converts to Seconds diff
-  pixelsToDiff: (pixels) =>
-    Math.floor(pixels / @height * @duration())
-
-
-  # takes a absolute time and returns the position
-  timeToPosition: (time) =>
-    time = moment(time)
-    @diffToPixels(time.diff(@startDate()))
-  
-  # takes a y coordinate and returns the time
-  positionToTime: (y) =>
-    diff = @pixelsToDiff(y)
-    moment(@startDate() + diff)
-  
-  screenDiff: (unit) =>
-    d = @pixelsToDiff($(window).height())
-    d = convertDiff(d, unit) if unit?
-    d
 
   render: =>
     $el = @$(@el)
-    $el.prepend @topbar.render().el
-    $el.append @axis.render().el
-    #$el.append @minimap.render().el
     for view in @eventViews
       $el.append(view.el)
     @redraw()
@@ -210,26 +150,15 @@ class TimelineView extends Backbone.View
   
   redraw: =>
     $el = @$(@el)
-    $el.css 'height', @height
 
-    # slow
-    #   throttle this - make axis more efficient about adding / removing ticks
-    @axis.render()
-    #@axisRedraw()
-
-    @$("[data-time]").each (i, child) =>
-      child = $(child)
-      time = child.data('time')
-      yPos = @timeToPosition(time)
-      child.css 'top', yPos
+    # TODO: move this to TimeGeometry?
+    - if false
+      @$("[data-time]").each (i, child) =>
+        child = $(child)
+        time = child.data('time')
+        yPos = @timeToPosition(time)
+        child.css 'top', yPos
     
-    
-    
-
-
-#### Viewport
-#class Viewport extends Backbone.View
-#  className: 'Viewport'
 
 
 #### Main
@@ -257,22 +186,13 @@ $ ->
   $('body').html timeline.el
 
 
-
-  # Junk
-  gilman = lifeOfSteve.sorted().at(2)
-  gw = lifeOfSteve.sorted().at(3)
-  diff = gw.time.diff(gilman.time)
-
-  console.log "ticks"
-  screenDiff = timeline.pixelsToDiff($(window).height())
-  console.log convertDiff(screenDiff, 'years')
-
-
   $(window).scroll (ev) ->
     pos = $(window).scrollTop()
     topDate = timeline.positionToTime(pos)
     #console.log topDate.format("LL")
 
-
-
+  
+  geometry = new TimeGeometry({events: lifeOfSteve})
+  geometry.setScreenDiff( diffFor('years', 2) )
+  console.log geometry.secondsPerPixel
 

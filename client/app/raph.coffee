@@ -68,7 +68,6 @@ class Axis extends Backbone.View
   className: 'Axis'
 
   initialize: (opts) ->
-    @spacing = 20
     @start = moment([1990])
     @end = moment([2002])
     @diff = @end.diff(@start)
@@ -164,10 +163,6 @@ $ ->
   axis.render()
   controls.render()
 
-  rescale = ->
-    axis.spacing += 1
-    axis.redraw()
-  #setInterval rescale, 10
 
   
 
