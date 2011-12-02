@@ -1,7 +1,7 @@
 moment = require('moment')
 Backbone = require('backbone')
 
-MAX_SPP = 486124775
+
 
 convertDiff = (seconds, output) ->
   now = moment()
@@ -12,7 +12,7 @@ getDiff = (unit, value) ->
   next = now.clone().add(unit, value)
   next.diff(now)
 
-
+THOUSAND_YEARS = getDiff('years', 1000)
 
 class Controls extends Backbone.View
   className: 'RaphControls'
@@ -23,16 +23,37 @@ class Controls extends Backbone.View
 
   tmpl: ->
     div '.slider', ''
+    ul ->
+      li '.century', 'Century'
+      li '.decade', 'Decade'
+      li '.years', 'Year'
+      li '.months', 'Month'
+      li '.weeks', 'Week'
+      li '.days', 'Day'
   
+  events:
+    "click li": "setScale"
+  
+  setScale: (ev) ->
+    unit = $(ev.target).attr('class')
+    if unit is 'century'
+      diff = getDiff('years', 100)
+    else if unit is 'decade'
+      diff = getDiff('years', 10)
+    else
+      diff = getDiff(unit, 1)
+      
+    @axis.setScreenDiff(diff)
+    console.log @axis.spp
+    @$('.slider').slider('value', @axis.spp)
+
   render: =>
     @$(@el).html CoffeeKup.render(@tmpl)
     @$('.slider').slider
-      max: MAX_SPP
-      step: MAX_SPP / 1000
       slide: (e, ui) =>
-        #console.log ui.value
-        @axis.spp = MAX_SPP - ui.value
-        @axis.redraw()
+        console.log ui.value
+        #@axis.spp = v
+        #@axis.redraw()
     @
 
 
@@ -76,14 +97,15 @@ class Axis extends Backbone.View
     d = convertDiff(d, unit) if unit?
     d
 
-
+  setScreenDiff: (diff) =>
+    @spp = Math.floor(diff / $(window).height())
+    @redraw()
 
 
 
   render: =>
     $el = @$(@el)
     @spp =  @diff / $el.height()
-    console.log @spp
     @paper = Raphael(@el, $el.width(), $el.height())
     @redraw()
     @
@@ -92,32 +114,31 @@ class Axis extends Backbone.View
     $el = @$(@el)
     @paper.clear()
 
-    console.log @screenDiff()
+    # Draw Years
+    @drawLabels('years', 'YYYY', 80)
 
-    mmt = @start.clone()
-    while mmt < @end
-      mmt.add('years', 1)
-      @drawYear(mmt)
-
+    # Draw Months
     if @screenDiff('months') < 50
-      mmt = @start.clone()
-      while mmt < @end
-        mmt.add('months', 1)
-        @drawMonth(mmt)
+      @drawLabels('months', 'MMMM', 50)
+    
+    # Draw Days
+    if @screenDiff('days') < 80
+      @drawLabels('days', 'dddd', 20)
 
 
-  drawYear: (mmt) =>
-    p = @timeToPosition(mmt)
-    path = @paper.path("M0,#{p} H40")
-    path.attr('stroke-width', 2)
-    text = @paper.text(1, p+5, mmt.format('YYYY'))
-    text.attr('text-anchor', 'start')
-  
-  drawMonth: (mmt) =>
-    p = @timeToPosition(mmt)
-    path = @paper.path("M0,#{p} H20")
-    path.attr('stroke-width', 1)
 
+
+  drawLabels: (unit, format, line) =>
+    #debugger
+    mmt = @start.clone()
+    point = 0
+    while mmt < @end and point < $(window).height()
+      point = @timeToPosition(mmt)
+      path = @paper.path("M0,#{point} H#{line}")
+      path.attr('stroke-width', 2)
+      text = @paper.text(1, point+5, mmt.format(format))
+      text.attr('text-anchor', 'start')    
+      mmt.add(unit, 1)
 
 
 #### Main
