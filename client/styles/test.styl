@@ -4,37 +4,43 @@
 
 body
   color #555
+  min-height 100%
 
-.Timeline
+.Viewport
+  position relative
+  border 2px solid #333
+
+.TimelineView
   position relative
   background #f7f7f7
 
-  .Axis
-    height 100%
-    width: 100px
-    background: #ccc
-    border-right 1px solid #333
+.AxisView
+  height 100%
+  width: 100px
+  background: #ccc
+  border-right 1px solid #333
 
-    .AxisLabel
-      position absolute
-      width: 100px
-      text-align: center
-      font-weight bold
-
-  .controls
-    position fixed
-    top 0
-    right 0
-    width 200px
-    height 200px
-    padding 10px
-    background #ccf
-
-  .TimePoint
+  .AxisLabel
     position absolute
-    border-top: 1px solid #333
-    margin-left: 100px
-    padding: 10px
+    width: 100px
+    text-align: center
+    font-weight bold
 
-    .title
-      font-weight: bold
+.controls
+  position fixed
+  top 0
+  right 0
+  width 200px
+  height 200px
+  padding 10px
+  background #ccf
+
+.EventView
+  position absolute
+  border-top: 1px solid #333
+  left: 100px
+  top: 140px
+  padding: 10px
+
+  .title
+    font-weight: bold

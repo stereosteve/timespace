@@ -1,8 +1,9 @@
 *{margin:0;padding:0}
-body{color:#555}
-.Timeline{position:relative;background:#f7f7f7;}
-.Timeline .Axis{height:100%;width:100px;background:#ccc;border-right:1px solid #333;}
-.Timeline .Axis .AxisLabel{position:absolute;width:100px;text-align:center;font-weight:bold}
-.Timeline .controls{position:fixed;top:0;right:0;width:200px;height:200px;padding:10px;background:#ccf}
-.Timeline .TimePoint{position:absolute;border-top:1px solid #333;margin-left:100px;padding:10px;}
-.Timeline .TimePoint .title{font-weight:bold}
+body{color:#555;min-height:100%}
+.Viewport{position:relative;border:2px solid #333}
+.TimelineView{position:relative;background:#f7f7f7}
+.AxisView{height:100%;width:100px;background:#ccc;border-right:1px solid #333;}
+.AxisView .AxisLabel{position:absolute;width:100px;text-align:center;font-weight:bold}
+.controls{position:fixed;top:0;right:0;width:200px;height:200px;padding:10px;background:#ccf}
+.EventView{position:absolute;border-top:1px solid #333;left:100px;top:140px;padding:10px;}
+.EventView .title{font-weight:bold}
