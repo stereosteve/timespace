@@ -2,7 +2,14 @@
 class Event extends Backbone.Model
 
   initialize: ->
-    @time = moment(@get('time'))
+    @mmt = moment()
+    @bind("all", @changed)
+  
+  changed: =>
+    @mmt = moment(@get('time')) if @hasChanged('time')
+    @mmt = moment(@get('created_at')) if @hasChanged('created_at')
+    console.log @mmt.format('LLLL')
+
 
 
 #### EventCollection
@@ -10,15 +17,16 @@ class EventCollection extends Backbone.Collection
   model: Event
 
   initialize: ->
-    @bind('add', @changed)
+    #@bind('add', @changed)
+    @bind('all', @changed)
 
   changed: =>
-    @startDate = @sorted().first().time
-    @endDate = @sorted().last().time
+    @startDate = @sorted().first().mmt
+    @endDate = @sorted().last().mmt
     @diff = @endDate.diff(@startDate)
 
   sorted: ->
-    new EventCollection(@sortBy (event) -> event.time)
+    new EventCollection(@sortBy (event) -> event.mmt)
 
 exports.Event = Event
 exports.EventCollection = EventCollection
