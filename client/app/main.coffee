@@ -66,11 +66,16 @@ class Switchboard extends Backbone.Model
     @window = $(window)
     @windowResized()
     $(window).bind 'resize', @windowResized
+    $(window).bind 'scroll', @windowScrolled
   
   windowResized: (ev) =>
     @windowHeight = @window.height()
     @centerLine = @windowHeight / 2
     @trigger('windowResized')
+  
+  windowScrolled: (ev) =>
+    console.log @viewportStartDate().format("LLLL")
+    @trigger('windowScrolled')  
 
   # takes a Seconds diff and returns a span of pixels
   diffToPixels: (diff) =>
@@ -109,6 +114,9 @@ class Switchboard extends Backbone.Model
   
   totalHeight: =>
     @diffToPixels(@events.diff)
+  
+  viewportStartDate: =>
+    @positionToTime(window.scrollY)
 
 ####
 #### Views
@@ -140,6 +148,7 @@ class Axis extends Backbone.View
   initialize: (opts) ->
     @switchboard = opts.switchboard
     @switchboard.bind('rescale', @redraw)
+    @switchboard.bind('windowScrolled', @redraw)
     @render()
 
   render: =>
@@ -163,25 +172,27 @@ class Axis extends Backbone.View
       @drawLabels('months', 'MMMM', 50)
     
     # Draw Days
-    if @switchboard.screenDiff('days') < 8
+    if @switchboard.screenDiff('days') < 30
       @drawLabels('days', 'dddd', 20)
 
-    if @switchboard.screenDiff('hours') < 8
+    if @switchboard.screenDiff('hours') < 30
       @drawLabels('hours', 'H', 20)
     
-    if @switchboard.screenDiff('minutes') < 10
+    if @switchboard.screenDiff('minutes') < 30
       @drawLabels('minutes', '', 20)
     
-    if @switchboard.screenDiff('seconds') < 10
+    if @switchboard.screenDiff('seconds') < 30
       @drawLabels('seconds', '', 20)
 
 
   drawLabels: (unit, format, line) =>
     #debugger
-    mmt = @switchboard.events.startDate.clone()
+    top = @switchboard.viewportStartDate()
+    mmt = top.clone().seconds(0).minutes(0).hours(0).date(0)
     point = 0
-    while mmt < @switchboard.events.endDate #and point < @switchboard.windowHeight
-      point = @switchboard.timeToPosition(mmt)
+    while point < @switchboard.windowHeight
+      diff = mmt.diff(top)
+      point = @switchboard.diffToPixels(diff)
       path = @paper.path("M0,#{point} H#{line}")
       path.attr('stroke-width', 2)
       text = @paper.text(1, point+5, mmt.format(format))
@@ -229,9 +240,9 @@ class Controls extends Backbone.View
     @$('.slider').slider
       max: 30
       step: 0.01
-      change: (e, ui) =>
+      slide: (e, ui) =>
         v = Math.floor(Math.exp(ui.value))
-        #console.log v
+        console.log v
         @switchboard.setSecondsPerPixel(v)
     @
 
@@ -311,7 +322,7 @@ $ ->
   timespace.render()
 
   
-  switchboard = new Switchboard(events: lifeOfSteve)
-  switchboard.setScreenDiff( diffFor('years', 2) )
+  #switchboard = new Switchboard(events: lifeOfSteve)
+  #switchboard.setScreenDiff( diffFor('years', 2) )
   #console.log switchboard.secondsPerPixel
 
