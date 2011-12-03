@@ -1,6 +1,3 @@
-_ = require('underscore')
-Backbone = require('backbone')
-moment = require('moment')
 
 #
 # Helpers
@@ -76,7 +73,7 @@ class Switchboard extends Backbone.Model
   
   windowScrolled: (ev) =>
     #console.log @centerDate().format("LLLL")
-    @trigger('windowScrolled')  
+    @trigger('windowScrolled')
 
   # takes a Seconds diff and returns a span of pixels
   diffToPixels: (diff) =>
@@ -122,7 +119,7 @@ class Switchboard extends Backbone.Model
     @positionToTime(window.scrollY)
 
   centerDate: =>
-    @positionToTime(window.scrollY + @centerLine)    
+    @positionToTime(window.scrollY + @centerLine)
 
 ####
 #### Views
@@ -333,6 +330,13 @@ $ ->
   $('body').html timespace.el
   timespace.render()
 
+  ows = new EventCollection()
+  ows.url = '/data/ows.json'
+  ows.fetch
+    success: ->
+      console.log ows.models
+    error: ->
+      console.log 'sprint'
   
   #switchboard = new Switchboard(events: lifeOfSteve)
   #switchboard.setScreenDiff( diffFor('years', 2) )

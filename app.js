@@ -2,7 +2,22 @@
 var express = require('express')
   , stylus = require('stylus')
   , stitch = require('stitch')
-  , stitchPackage = require('./pkg').stitchPackage
+  , stitch = require('stitch')
+
+var stitchPackage = stitch.createPackage({
+  paths: [
+    __dirname + '/client/app'
+  ],
+  dependencies: [
+    __dirname + '/public/vendor/js/jquery.js',
+    __dirname + '/public/vendor/js/underscore.js',
+    __dirname + '/public/vendor/js/backbone.js',
+    __dirname + '/public/vendor/js/moment.js',
+    __dirname + '/public/vendor/js/jqueryui.js',
+    __dirname + '/public/vendor/js/coffeekup.js'
+  ]
+})
+
 
 var app = module.exports = express.createServer();
 

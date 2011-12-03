@@ -1,16 +1,9 @@
-moment = require('moment')
-Backbone = require('backbone')
-
-
+models = require('models')
 
 $ ->
-  paper = Raphael(0, 0, "100%", "100%")
-  rect = paper.rect(0, 0, "100%", "100%")
-  rect.attr('fill', '#300')
 
-  $('body').append(paper)
+  ows = new models.EventCollection()
 
-  $(window).scroll (ev) ->
-    console.log ev
-  
+  $.getJSON '/data/ows.json', (data) ->
+    console.log data
 
