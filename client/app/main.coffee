@@ -66,6 +66,7 @@ class Switchboard extends Backbone.Model
     @window = $(window)
     @windowResized()
     $(window).bind 'resize', @windowResized
+    #$(window).bind 'scroll', _.throttle(@windowScrolled, 50)
     $(window).bind 'scroll', @windowScrolled
   
   windowResized: (ev) =>
@@ -74,16 +75,18 @@ class Switchboard extends Backbone.Model
     @trigger('windowResized')
   
   windowScrolled: (ev) =>
-    console.log @viewportStartDate().format("LLLL")
+    console.log @centerDate().format("LLLL")
     @trigger('windowScrolled')  
 
   # takes a Seconds diff and returns a span of pixels
   diffToPixels: (diff) =>
-    Math.floor(diff / @secondsPerPixel) 
+    #Math.floor(diff / @secondsPerPixel) 
+    diff / @secondsPerPixel
 
   # takes a span of pixels and converts to Seconds diff
   pixelsToDiff: (pixels) =>
-    Math.floor(pixels * @secondsPerPixel)
+    #Math.floor(pixels * @secondsPerPixel)
+    pixels * @secondsPerPixel
 
 
   # takes a absolute time and returns the position
@@ -104,7 +107,7 @@ class Switchboard extends Backbone.Model
     d
 
   setScreenDiff: (diff) =>
-    @setSecondsPerPixel(Math.floor(diff / @windowHeight))
+    @setSecondsPerPixel(diff / @windowHeight)
   
   setSecondsPerPixel: (spp) =>
     console.log spp
@@ -117,6 +120,9 @@ class Switchboard extends Backbone.Model
   
   viewportStartDate: =>
     @positionToTime(window.scrollY)
+
+  centerDate: =>
+    @positionToTime(window.scrollY + @centerLine)    
 
 ####
 #### Views
@@ -158,46 +164,46 @@ class Axis extends Backbone.View
   
   redraw: =>
     $el = @$(@el)
-    $el.height(@switchboard.totalHeight())
+    #$el.height(@switchboard.totalHeight())
 
     #@paper.clear()
     @paper.clear()
     @paper.setSize($el.width(), $el.height())
 
     # Draw Years
-    @drawLabels('years', 'YYYY', 80)
+    @drawYears()
+    @drawMonths()
 
-    # Draw Months
-    if @switchboard.screenDiff('months') < 30
-      @drawLabels('months', 'MMMM', 50)
+    top = @switchboard.centerDate()
+    text = @paper.text(150, $el.height()/2, top.format("LL"))
+    text.attr('text-anchor', 'end')
     
-    # Draw Days
-    if @switchboard.screenDiff('days') < 30
-      @drawLabels('days', 'dddd', 20)
-
-    if @switchboard.screenDiff('hours') < 30
-      @drawLabels('hours', 'H', 20)
-    
-    if @switchboard.screenDiff('minutes') < 30
-      @drawLabels('minutes', '', 20)
-    
-    if @switchboard.screenDiff('seconds') < 30
-      @drawLabels('seconds', '', 20)
-
-
-  drawLabels: (unit, format, line) =>
-    #debugger
+  drawYears: =>
     top = @switchboard.viewportStartDate()
-    mmt = top.clone().seconds(0).minutes(0).hours(0).date(0)
+    mmt = top.clone().seconds(0).minutes(0).hours(0).date(1).month(0)
     point = 0
     while point < @switchboard.windowHeight
       diff = mmt.diff(top)
       point = @switchboard.diffToPixels(diff)
-      path = @paper.path("M0,#{point} H#{line}")
+      path = @paper.path("M0,#{point} H80")
       path.attr('stroke-width', 2)
-      text = @paper.text(1, point+5, mmt.format(format))
-      text.attr('text-anchor', 'start')    
-      mmt.add(unit, 1)
+      text = @paper.text(1, point+5, mmt.format('YYYY'))
+      text.attr('text-anchor', 'start')
+      mmt.add('years', 1)
+  
+  drawMonths: =>
+    top = @switchboard.viewportStartDate()
+    mmt = top.clone().seconds(0).minutes(0).hours(0).date(1)
+    point = 0
+    while point < @switchboard.windowHeight
+      unless mmt.month() == 0
+        diff = mmt.diff(top)
+        point = @switchboard.diffToPixels(diff)
+        path = @paper.path("M0,#{point} H40")
+        path.attr('stroke-width', 2)
+        text = @paper.text(1, point+5, mmt.format('MMM'))
+        text.attr('text-anchor', 'start')
+      mmt.add('months', 1)
 
 
 class Controls extends Backbone.View
@@ -291,9 +297,11 @@ class Timespace extends Backbone.View
     @controls = new Controls(switchboard: @switchboard)
   
   render: =>
-    @$(@el).append(@timeline.render().el)
-    @$(@el).append(@axis.render().el)
-    @$(@el).append(@controls.render().el)
+    $el = @$(@el)
+    $el.append("<div class='CenterLine' />")
+    $el.append(@timeline.render().el)
+    $el.append(@axis.render().el)
+    $el.append(@controls.render().el)
     @
 
 
@@ -312,6 +320,10 @@ $ ->
   lifeOfSteve.add
     title: "Perkins family moves to Baltimore, MD"
     time: [1994, 4]
+  
+  lifeOfSteve.add
+    title: "Y2K"
+    time: [2000, 0]
 
   lifeOfSteve.add
     title: "Graduated from Gilman High School"
