@@ -5,7 +5,7 @@ Position DOM elements temporally.
     npm install
     node app.js
 
-## Example Timelines
+## Timeline Ideas
 
   - Years: Life of Oppenheimer - or - the development of the atomic bomb
   - Months: Presidential elections - separate timeline for each candidate
@@ -19,3 +19,12 @@ Position DOM elements temporally.
   - Dipity
   - Simile Timeline Widget
   - antiscroll - slick viewport implementation
+
+## Todo
+
+  - take API keys out of app.js
+  - zoom around center line
+  - show centerDate in top left controls
+
+  - high level display unit (month, week, day, hour) - elements can be tiled inside of this div
+      - EventCollection.eventsInRange(start, end)

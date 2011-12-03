@@ -1,0 +1,4762 @@
+{
+   "status":"OK",
+   "copyright":"Copyright (c) 2011 The New York Times Company. All Rights Reserved.",
+   "results": {
+      "chamber": "House",
+      "year": "2011",
+      "month": "Feb.",
+      "num_results": "125",
+      "votes": [
+                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "150",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/150.json",
+           "bill_number": "H R 368",
+           "question": "On Motion to Suspend the Rules and Pass, as Amended", 
+           "description": "Removal Clarification Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2011-02-28",
+           "time": "19:09:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "176",
+             "no": "0",
+             "present": "0",
+             "not_voting": "16",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "220",
+             "no": "4",
+             "present": "0",
+             "not_voting": "17",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "396",
+             "no": "4",
+             "present": "0",
+             "not_voting": "32"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "149",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/149.json",
+           "bill_number": "H R 347",
+           "question": "On Motion to Suspend the Rules and Pass, as Amended", 
+           "description": "Federal Restricted Buildings and Grounds Improvement Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2011-02-28",
+           "time": "19:03:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "176",
+             "no": "0",
+             "present": "0",
+             "not_voting": "16",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "223",
+             "no": "3",
+             "present": "0",
+             "not_voting": "15",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "399",
+             "no": "3",
+             "present": "0",
+             "not_voting": "30"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "148",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/148.json",
+           "bill_number": "H R 394",
+           "question": "On Motion to Suspend the Rules and Pass, as Amended", 
+           "description": "Federal Courts Jurisdiction and Venue Clarification Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2011-02-28",
+           "time": "18:55:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "176",
+             "no": "0",
+             "present": "0",
+             "not_voting": "16",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "226",
+             "no": "0",
+             "present": "0",
+             "not_voting": "15",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "402",
+             "no": "0",
+             "present": "0",
+             "not_voting": "30"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "147",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/147.json",
+           "bill_number": "H R 1",
+           "question": "On Passage", 
+           "description": "Making appropriations for the Department of Defense and the other departments and agencies of the Government for the fisal year ending September 30, 2011, and for other purposes",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2011-02-19",
+           "time": "04:40:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "0",
+             "no": "186",
+             "present": "0",
+             "not_voting": "7",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "235",
+             "no": "3",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "235",
+             "no": "189",
+             "present": "0",
+             "not_voting": "9"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "146",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/146.json",
+           "bill_number": "H R 1",
+           "question": "On Motion to Recommit with Instructions", 
+           "description": "Making appropriations for the Department of Defense and the other departments and agencies of the Government for the fisal year ending September 30, 2011, and for other purposes",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "04:33:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "186",
+             "no": "0",
+             "present": "0",
+             "not_voting": "7",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "0",
+             "no": "238",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "186",
+             "no": "238",
+             "present": "0",
+             "not_voting": "9"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "145",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/145.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Burgess of Texas Amendment No. 154",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "04:09:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "0",
+             "no": "185",
+             "present": "0",
+             "not_voting": "8",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "235",
+             "no": "2",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "235",
+             "no": "187",
+             "present": "0",
+             "not_voting": "11"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "144",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/144.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "King of Iowa Amendment No. 273",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "04:06:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "0",
+             "no": "185",
+             "present": "0",
+             "not_voting": "8",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "189",
+             "no": "48",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "189",
+             "no": "233",
+             "present": "0",
+             "not_voting": "11"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "143",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/143.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Mulvaney of South Carolina Amendment No. 164",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "02:25:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "0",
+             "no": "184",
+             "present": "0",
+             "not_voting": "9",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "93",
+             "no": "144",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "93",
+             "no": "328",
+             "present": "0",
+             "not_voting": "12"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "142",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/142.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Carney of Delaware Amendment No. 241",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "02:21:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "103",
+             "no": "82",
+             "present": "0",
+             "not_voting": "8",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "18",
+             "no": "218",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "121",
+             "no": "300",
+             "present": "0",
+             "not_voting": "12"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "141",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/141.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Pitts of Pennsylvania Amendment No. 430",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "02:18:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "4",
+             "no": "181",
+             "present": "0",
+             "not_voting": "8",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "235",
+             "no": "2",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "239",
+             "no": "183",
+             "present": "0",
+             "not_voting": "11"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "140",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/140.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Noem of South Dakota Amendment No. 563",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "02:15:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "21",
+             "no": "164",
+             "present": "0",
+             "not_voting": "8",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "234",
+             "no": "4",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "255",
+             "no": "168",
+             "present": "0",
+             "not_voting": "10"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "139",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/139.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Heller of Nevada Amendment No. 482",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "02:12:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "5",
+             "no": "179",
+             "present": "0",
+             "not_voting": "9",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "204",
+             "no": "34",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "209",
+             "no": "213",
+             "present": "0",
+             "not_voting": "11"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "138",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/138.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Burgess of Texas Amendment No. 200",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "02:09:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "4",
+             "no": "181",
+             "present": "0",
+             "not_voting": "8",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "235",
+             "no": "1",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "239",
+             "no": "182",
+             "present": "0",
+             "not_voting": "12"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "137",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/137.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Pompeo of Kansas Amendment No. 545",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "02:06:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "7",
+             "no": "177",
+             "present": "0",
+             "not_voting": "9",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "227",
+             "no": "10",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "234",
+             "no": "187",
+             "present": "0",
+             "not_voting": "12"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "136",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/136.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "McKinley of West Virginia Amendment No. 217",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "02:03:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "19",
+             "no": "165",
+             "present": "0",
+             "not_voting": "9",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "220",
+             "no": "18",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "239",
+             "no": "183",
+             "present": "0",
+             "not_voting": "11"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "135",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/135.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "McKinley of West Virginia Amendment No. 216",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "02:00:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "17",
+             "no": "168",
+             "present": "0",
+             "not_voting": "8",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "223",
+             "no": "14",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "240",
+             "no": "182",
+             "present": "0",
+             "not_voting": "11"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "134",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/134.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Sullivan of Oklahoma Amendment No. 94",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "01:56:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "79",
+             "no": "105",
+             "present": "0",
+             "not_voting": "9",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "206",
+             "no": "31",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "285",
+             "no": "136",
+             "present": "0",
+             "not_voting": "12"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "133",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/133.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Issa of California Amendment No. 569",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "01:53:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "1",
+             "no": "184",
+             "present": "0",
+             "not_voting": "8",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "190",
+             "no": "46",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "191",
+             "no": "230",
+             "present": "0",
+             "not_voting": "12"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "132",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/132.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Luetkemeyer of Missouri Amendment No. 149",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "01:50:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "9",
+             "no": "176",
+             "present": "0",
+             "not_voting": "8",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "235",
+             "no": "3",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "244",
+             "no": "179",
+             "present": "0",
+             "not_voting": "10"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "131",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/131.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Luetkemeyer of Missouri Amendment No. 47",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "01:47:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "16",
+             "no": "167",
+             "present": "0",
+             "not_voting": "10",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "229",
+             "no": "9",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "245",
+             "no": "176",
+             "present": "0",
+             "not_voting": "12"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "130",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/130.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Jones of North Carolina Amendment No. 548",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "01:44:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "51",
+             "no": "131",
+             "present": "0",
+             "not_voting": "11",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "208",
+             "no": "28",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "259",
+             "no": "159",
+             "present": "0",
+             "not_voting": "15"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "129",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/129.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Griffith of Virginia Amendment No. 109",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "01:41:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "8",
+             "no": "175",
+             "present": "0",
+             "not_voting": "10",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "227",
+             "no": "10",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "235",
+             "no": "185",
+             "present": "0",
+             "not_voting": "13"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "128",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/128.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Lee of California Amendment No. 141",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "01:38:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "70",
+             "no": "114",
+             "present": "0",
+             "not_voting": "9",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "6",
+             "no": "230",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "76",
+             "no": "344",
+             "present": "0",
+             "not_voting": "13"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "127",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/127.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Hall of Texas Amendment No. 495",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "01:35:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "6",
+             "no": "178",
+             "present": "0",
+             "not_voting": "9",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "227",
+             "no": "9",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "233",
+             "no": "187",
+             "present": "0",
+             "not_voting": "13"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "126",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/126.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Guinta of New Hampshire Amendment No. 166",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "01:31:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "0",
+             "no": "184",
+             "present": "0",
+             "not_voting": "9",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "210",
+             "no": "26",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "210",
+             "no": "210",
+             "present": "0",
+             "not_voting": "13"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "125",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/125.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Flake of Arizona Amendment No. 377",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-19",
+           "time": "01:27:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "78",
+             "no": "105",
+             "present": "0",
+             "not_voting": "10",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "183",
+             "no": "53",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "261",
+             "no": "158",
+             "present": "0",
+             "not_voting": "14"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "124",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/124.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Stearns of Florida Amendment No. 8",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:59:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "16",
+             "no": "170",
+             "present": "0",
+             "not_voting": "7",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "215",
+             "no": "21",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "231",
+             "no": "191",
+             "present": "0",
+             "not_voting": "11"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "123",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/123.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Rooney of Florida Amendment No. 13",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:56:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "16",
+             "no": "172",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "221",
+             "no": "17",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "237",
+             "no": "189",
+             "present": "0",
+             "not_voting": "7"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "122",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/122.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Neugebauer of Texas Amendment No. 151",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:53:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "0",
+             "no": "188",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "63",
+             "no": "174",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "63",
+             "no": "362",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "121",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/121.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Gardner of Colorado Amendment No. 79",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:50:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "5",
+             "no": "183",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "236",
+             "no": "1",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "241",
+             "no": "184",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "120",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/120.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Goodlatte of Virginia Amendment No. 467",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:47:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "8",
+             "no": "180",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "222",
+             "no": "15",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "230",
+             "no": "195",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "119",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/119.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Johnson of Ohio Amendment No. 498",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:44:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "11",
+             "no": "177",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "228",
+             "no": "9",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "239",
+             "no": "186",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "118",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/118.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Polis of Colorado Amendment No. 46",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:41:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "69",
+             "no": "119",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "5",
+             "no": "232",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "74",
+             "no": "351",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "117",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/117.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Kaptur of Ohio Amendment No. 333",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:38:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "26",
+             "no": "162",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "6",
+             "no": "232",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "32",
+             "no": "394",
+             "present": "0",
+             "not_voting": "7"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "116",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/116.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Forbes of Virginia Amendment No. 146",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:35:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "43",
+             "no": "145",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "198",
+             "no": "39",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "241",
+             "no": "184",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "115",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/115.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Boren of Oklahoma Amendment No. 566",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:32:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "41",
+             "no": "147",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "236",
+             "no": "2",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "277",
+             "no": "149",
+             "present": "0",
+             "not_voting": "7"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "114",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/114.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Blumenauer of Oregon Amendment No. 323",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:29:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "134",
+             "no": "54",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "51",
+             "no": "187",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "185",
+             "no": "241",
+             "present": "0",
+             "not_voting": "7"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "113",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/113.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Herger of California Amendment No. 177",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:26:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "8",
+             "no": "179",
+             "present": "0",
+             "not_voting": "6",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "219",
+             "no": "18",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "227",
+             "no": "197",
+             "present": "0",
+             "not_voting": "9"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "112",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/112.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "McDermott of Washington Amendment No. 99",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:22:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "66",
+             "no": "120",
+             "present": "0",
+             "not_voting": "7",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "25",
+             "no": "213",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "91",
+             "no": "333",
+             "present": "0",
+             "not_voting": "9"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "111",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/111.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "McClintock of California Amendment No. 296",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:19:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "5",
+             "no": "182",
+             "present": "0",
+             "not_voting": "6",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "210",
+             "no": "28",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "215",
+             "no": "210",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "110",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/110.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Price of Georgia Amendment No. 409",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:16:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "3",
+             "no": "185",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "238",
+             "no": "0",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "241",
+             "no": "185",
+             "present": "0",
+             "not_voting": "7"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "109",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/109.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Markey of Massachusetts Amendment No. 27",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:13:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "163",
+             "no": "25",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "11",
+             "no": "226",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "174",
+             "no": "251",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "108",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/108.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Wu of Oregon Amendment No. 526",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:09:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "84",
+             "no": "104",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "3",
+             "no": "234",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "87",
+             "no": "338",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "107",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/107.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Broun of Georgia Amendment No. 263",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:06:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "6",
+             "no": "180",
+             "present": "0",
+             "not_voting": "7",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "171",
+             "no": "63",
+             "present": "0",
+             "not_voting": "7",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "177",
+             "no": "243",
+             "present": "0",
+             "not_voting": "13"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "106",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/106.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Broun of Georgia Amendment No. 246",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:03:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "14",
+             "no": "173",
+             "present": "0",
+             "not_voting": "6",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "60",
+             "no": "175",
+             "present": "0",
+             "not_voting": "6",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "74",
+             "no": "348",
+             "present": "0",
+             "not_voting": "11"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "105",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/105.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Campbell of California Amendment No. 519",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "21:00:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "46",
+             "no": "142",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "22",
+             "no": "215",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "68",
+             "no": "357",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "104",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/104.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Bishop of New York Amendment No. 414",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "20:56:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "143",
+             "no": "45",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "13",
+             "no": "224",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "156",
+             "no": "269",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "103",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/103.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Blackburn of Tennessee Amendment No. 104",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:46:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "0",
+             "no": "189",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "147",
+             "no": "92",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "147",
+             "no": "281",
+             "present": "0",
+             "not_voting": "5"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "102",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/102.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Kind of Wisconsin Amendment No. 88",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:43:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "111",
+             "no": "79",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "12",
+             "no": "227",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "123",
+             "no": "306",
+             "present": "0",
+             "not_voting": "4"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "101",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/101.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Kind of Wisconsin Amendment No. 89",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:40:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "108",
+             "no": "82",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "75",
+             "no": "164",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "183",
+             "no": "246",
+             "present": "0",
+             "not_voting": "4"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "100",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/100.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Emerson of Missouri Amendment No. 83",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:35:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "8",
+             "no": "182",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "238",
+             "no": "0",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "246",
+             "no": "182",
+             "present": "0",
+             "not_voting": "5"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "99",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/99.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "King of Iowa Amendment No. 268",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:32:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "3",
+             "no": "187",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "234",
+             "no": "4",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "237",
+             "no": "191",
+             "present": "0",
+             "not_voting": "5"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "98",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/98.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "King of Iowa Amendment No. 267",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:29:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "3",
+             "no": "187",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "238",
+             "no": "0",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "241",
+             "no": "187",
+             "present": "0",
+             "not_voting": "5"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "97",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/97.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Rehberg of Montana Amendment No. 575",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:26:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "3",
+             "no": "185",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "236",
+             "no": "2",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "239",
+             "no": "187",
+             "present": "0",
+             "not_voting": "7"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "96",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/96.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Poe of Texas Amendment No. 466",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:23:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "13",
+             "no": "175",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "236",
+             "no": "2",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "249",
+             "no": "177",
+             "present": "0",
+             "not_voting": "7"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "95",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/95.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Nadler of New York Amendment No. 524",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:20:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "164",
+             "no": "25",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "32",
+             "no": "206",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "196",
+             "no": "231",
+             "present": "0",
+             "not_voting": "6"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "94",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/94.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Young of Alaska Amendment No. 533",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:17:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "13",
+             "no": "176",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "230",
+             "no": "9",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "243",
+             "no": "185",
+             "present": "0",
+             "not_voting": "5"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "93",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/93.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Pence of Indiana Amendment No. 11",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:13:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "10",
+             "no": "178",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "230",
+             "no": "7",
+             "present": "1",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "240",
+             "no": "185",
+             "present": "1",
+             "not_voting": "7"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "92",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/92.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Kline of Minnesota Amendment No. 214",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:10:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "58",
+             "no": "132",
+             "present": "1",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "231",
+             "no": "4",
+             "present": "0",
+             "not_voting": "6",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "289",
+             "no": "136",
+             "present": "1",
+             "not_voting": "7"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "91",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/91.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Nadler of New York Amendment No. 232",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "14:07:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "91",
+             "no": "99",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "7",
+             "no": "232",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "98",
+             "no": "331",
+             "present": "0",
+             "not_voting": "4"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "90",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/90.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "McCollum of Minnesota Amendment No. 50",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-18",
+           "time": "13:58:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "118",
+             "no": "72",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "30",
+             "no": "209",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "148",
+             "no": "281",
+             "present": "0",
+             "not_voting": "4"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "89",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/89.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Holt of New Jersey Amendment No. 506",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "19:07:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "161",
+             "no": "30",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "2",
+             "no": "235",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "163",
+             "no": "265",
+             "present": "0",
+             "not_voting": "5"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "88",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/88.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Frank of Massachusetts Amendment No. 458",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "19:04:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "154",
+             "no": "37",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "6",
+             "no": "233",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "160",
+             "no": "270",
+             "present": "0",
+             "not_voting": "3"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "87",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/87.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Scalise of Louisiana Amendment No. 204",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "19:01:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "13",
+             "no": "178",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "236",
+             "no": "1",
+             "present": "1",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "249",
+             "no": "179",
+             "present": "1",
+             "not_voting": "4"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "86",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/86.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Carter of Texas Amendment No. 165",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "18:57:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "19",
+             "no": "170",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "231",
+             "no": "7",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "250",
+             "no": "177",
+             "present": "0",
+             "not_voting": "6"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "85",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/85.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Lummis of Wyoming Amendment No. 195",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "18:54:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "5",
+             "no": "185",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "227",
+             "no": "12",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "232",
+             "no": "197",
+             "present": "0",
+             "not_voting": "4"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "84",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/84.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Camp of Michigan Amendment No. 516",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "18:51:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "48",
+             "no": "143",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "89",
+             "no": "149",
+             "present": "1",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "137",
+             "no": "292",
+             "present": "1",
+             "not_voting": "3"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "83",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/83.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Walden of Oregon Amendment No. 404",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "18:45:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "10",
+             "no": "177",
+             "present": "0",
+             "not_voting": "6",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "234",
+             "no": "4",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "244",
+             "no": "181",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "82",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/82.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Price of North Carolina Amendment No. 514",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "18:42:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "188",
+             "no": "3",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "79",
+             "no": "156",
+             "present": "1",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "267",
+             "no": "159",
+             "present": "1",
+             "not_voting": "6"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "81",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/81.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Cole of Oklahoma Amendment No. 208",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "18:38:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "13",
+             "no": "174",
+             "present": "0",
+             "not_voting": "6",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "234",
+             "no": "1",
+             "present": "0",
+             "not_voting": "6",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "247",
+             "no": "175",
+             "present": "0",
+             "not_voting": "11"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "80",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/80.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Woolsey of California Amendment No. 189",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "18:35:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "85",
+             "no": "105",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "6",
+             "no": "234",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "91",
+             "no": "339",
+             "present": "0",
+             "not_voting": "3"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "79",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/79.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Sessions of Texas Amendment No. 43",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "11:14:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "0",
+             "no": "190",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "176",
+             "no": "60",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "176",
+             "no": "250",
+             "present": "0",
+             "not_voting": "7"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "78",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/78.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Heller of Nevada Amendment No. 29",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "11:11:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "10",
+             "no": "182",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "180",
+             "no": "59",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "190",
+             "no": "241",
+             "present": "0",
+             "not_voting": "2"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "77",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/77.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Canseco of Texas Amendment No. 248",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "11:07:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "44",
+             "no": "148",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "230",
+             "no": "7",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "274",
+             "no": "155",
+             "present": "0",
+             "not_voting": "4"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "76",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/76.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Weiner of New York Amendment No. 100",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "11:04:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "42",
+             "no": "150",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "226",
+             "no": "13",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "268",
+             "no": "163",
+             "present": "0",
+             "not_voting": "2"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "75",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/75.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Price of Georgia Amendment No. 410",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "11:00:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "0",
+             "no": "190",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "176",
+             "no": "60",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "176",
+             "no": "250",
+             "present": "0",
+             "not_voting": "7"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "74",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/74.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Young of Alaska Amendment No. 532",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "10:57:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "172",
+             "no": "20",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "141",
+             "no": "97",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "313",
+             "no": "117",
+             "present": "0",
+             "not_voting": "3"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "73",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/73.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "McMorris Rodgers of Washington Amendment No. 276",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "10:54:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "17",
+             "no": "174",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "232",
+             "no": "5",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "249",
+             "no": "179",
+             "present": "0",
+             "not_voting": "5"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "72",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/72.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Flake of Arizona Amendment No. 457",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "10:50:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "0",
+             "no": "192",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "115",
+             "no": "124",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "115",
+             "no": "316",
+             "present": "0",
+             "not_voting": "2"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "71",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/71.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Bass of New Hampshire Amendment No. 565",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "10:47:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "18",
+             "no": "172",
+             "present": "1",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "86",
+             "no": "150",
+             "present": "1",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "104",
+             "no": "322",
+             "present": "2",
+             "not_voting": "5"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "70",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/70.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Reed of New York Amendment No. 381",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "10:44:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "15",
+             "no": "176",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "224",
+             "no": "10",
+             "present": "0",
+             "not_voting": "7",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "239",
+             "no": "186",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "69",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/69.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Canseco of Texas Amendment No. 249",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "10:41:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "25",
+             "no": "164",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "223",
+             "no": "13",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "248",
+             "no": "177",
+             "present": "0",
+             "not_voting": "8"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "68",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/68.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Walberg of Michigan Amendment No. 196",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "10:37:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "3",
+             "no": "187",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "214",
+             "no": "22",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "217",
+             "no": "209",
+             "present": "0",
+             "not_voting": "7"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "67",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/67.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Pompeo of Kansas Amendment No. 85",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-17",
+           "time": "10:30:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "3",
+             "no": "186",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "168",
+             "no": "70",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "171",
+             "no": "256",
+             "present": "0",
+             "not_voting": "6"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "66",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/66.json",
+           "bill_number": "H R 514",
+           "question": "On Motion to Concur in the Senate Amendment", 
+           "description": "To extend expiring provisions of the USA PATRIOT Improvement and Reauthorization Act of 2005 and Intelligence Reform and Terrorism Prevention Act of 2004 relating to access to business records, individual terrorists as agents of foreign powers, and roving wiretaps until December 8, 2011",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2011-02-17",
+           "time": "10:10:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "68",
+             "no": "117",
+             "present": "0",
+             "not_voting": "8",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "211",
+             "no": "26",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "279",
+             "no": "143",
+             "present": "0",
+             "not_voting": "11"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "65",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/65.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Reed of New York Amendment No. 379",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "19:19:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "9",
+             "no": "182",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "219",
+             "no": "21",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "228",
+             "no": "203",
+             "present": "0",
+             "not_voting": "2"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "64",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/64.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Pompeo of Kansas Amendment No. 84",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "19:14:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "11",
+             "no": "176",
+             "present": "0",
+             "not_voting": "6",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "228",
+             "no": "9",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "239",
+             "no": "185",
+             "present": "0",
+             "not_voting": "9"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "63",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/63.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Flake of Arizona Amendment No. 376",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "19:11:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "9",
+             "no": "182",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "190",
+             "no": "48",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "199",
+             "no": "230",
+             "present": "0",
+             "not_voting": "4"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "62",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/62.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Moran of Virginia Amendment No. 338",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "19:06:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "57",
+             "no": "132",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "16",
+             "no": "220",
+             "present": "2",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "73",
+             "no": "352",
+             "present": "2",
+             "not_voting": "6"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "61",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/61.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Lummis of Wyoming Amendment No. 193",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "19:02:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "6",
+             "no": "184",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "207",
+             "no": "32",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "213",
+             "no": "216",
+             "present": "0",
+             "not_voting": "4"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "60",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/60.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Pascrell of New Jersey Amendment No. 223",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "14:42:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "186",
+             "no": "6",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "132",
+             "no": "107",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "318",
+             "no": "113",
+             "present": "0",
+             "not_voting": "2"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "59",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/59.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Defazio of Oregon Amendment No. 98",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "14:38:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "86",
+             "no": "105",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "44",
+             "no": "196",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "130",
+             "no": "301",
+             "present": "0",
+             "not_voting": "2"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "58",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/58.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Latta of Ohio Amendment No. 259",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "14:34:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "2",
+             "no": "190",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "135",
+             "no": "103",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "137",
+             "no": "293",
+             "present": "0",
+             "not_voting": "3"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "57",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/57.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Tonko of New York Amendment No. 4",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "14:31:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "185",
+             "no": "6",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "23",
+             "no": "217",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "208",
+             "no": "223",
+             "present": "0",
+             "not_voting": "2"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "56",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/56.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Inslee of Washington Amendment No. 395",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "14:28:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "146",
+             "no": "46",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "13",
+             "no": "227",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "159",
+             "no": "273",
+             "present": "0",
+             "not_voting": "1"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "55",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/55.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Biggert of Illinois Amendment No. 192",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "14:24:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "5",
+             "no": "187",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "165",
+             "no": "75",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "170",
+             "no": "262",
+             "present": "0",
+             "not_voting": "1"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "54",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/54.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Duncan of South Carolina Amendment No. 110",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "14:22:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "1",
+             "no": "191",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "170",
+             "no": "68",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "171",
+             "no": "259",
+             "present": "0",
+             "not_voting": "3"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "53",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/53.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Weiner of New York Amendment No. 125, as Modified",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "14:18:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "158",
+             "no": "34",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "70",
+             "no": "169",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "228",
+             "no": "203",
+             "present": "0",
+             "not_voting": "2"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "52",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/52.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Latta of Ohio Amendment No. 260",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "14:13:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "27",
+             "no": "165",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "157",
+             "no": "82",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "184",
+             "no": "247",
+             "present": "0",
+             "not_voting": "2"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "51",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/51.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Flake of Arizona Amendment No. 368",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "14:10:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "45",
+             "no": "147",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "217",
+             "no": "22",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "262",
+             "no": "169",
+             "present": "0",
+             "not_voting": "2"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "50",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/50.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Michaud of Maine Amendment No. 153",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "14:07:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "160",
+             "no": "32",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "145",
+             "no": "95",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "305",
+             "no": "127",
+             "present": "0",
+             "not_voting": "1"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "49",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/49.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "DeFazio of Oregon Amendment No. 97",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "14:02:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "127",
+             "no": "65",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "9",
+             "no": "231",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "136",
+             "no": "296",
+             "present": "0",
+             "not_voting": "1"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "48",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/48.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Holt of New Jersey Amendment No. 237",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "13:58:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "117",
+             "no": "75",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "16",
+             "no": "224",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "133",
+             "no": "299",
+             "present": "0",
+             "not_voting": "1"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "47",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/47.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Jones of North Carolina Amendment No. 95",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "13:53:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "99",
+             "no": "92",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "36",
+             "no": "202",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "135",
+             "no": "294",
+             "present": "0",
+             "not_voting": "4"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "46",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/46.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Rooney of Florida Amendment No. 2",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-16",
+           "time": "13:49:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": "123",
+             "no": "68",
+             "present": "1",
+             "not_voting": "1",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "110",
+             "no": "130",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "233",
+             "no": "198",
+             "present": "1",
+             "not_voting": "1"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "45",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/45.json",
+           "bill_number": "H RES 93",
+           "question": "On Agreeing to the Resolution", 
+           "description": "Providing for consideration of the Senate amendment to the bill (H.R. 514) to extend expiring provisions of the USA PATRIOT Improvement and Reauthorization Act of 2005 and Intelligence Reform and Terrorism Prevention Act of 2004",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2011-02-16",
+           "time": "13:29:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "18",
+             "no": "172",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "236",
+             "no": "4",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "254",
+             "no": "176",
+             "present": "0",
+             "not_voting": "3"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "44",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/44.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Pompeo of Kansas Amendment No. 86",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-15",
+           "time": "19:24:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "5",
+             "no": "185",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "104",
+             "no": "135",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "109",
+             "no": "320",
+             "present": "0",
+             "not_voting": "4"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "43",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/43.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Gutierrez of Illinois Amendment No. 63",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-15",
+           "time": "19:18:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "88",
+             "no": "103",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "17",
+             "no": "223",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "105",
+             "no": "326",
+             "present": "0",
+             "not_voting": "2"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "42",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/42.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Pompeo of Kansas Amendment No. 87",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-15",
+           "time": "19:13:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "1",
+             "no": "189",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "71",
+             "no": "169",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "72",
+             "no": "358",
+             "present": "0",
+             "not_voting": "3"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "41",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/41.json",
+           "bill_number": "H R 1",
+           "question": "On Agreeing to the Amendment", 
+           "description": "Flake of Arizona Amendment No. 370",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-15",
+           "time": "19:08:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "115",
+             "no": "75",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "92",
+             "no": "148",
+             "present": "0",
+             "not_voting": "1",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "207",
+             "no": "223",
+             "present": "0",
+             "not_voting": "3"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "40",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/40.json",
+           "bill_number": "H CON RES 17",
+           "question": "On Agreeing to the Resolution", 
+           "description": "Adjournment Resolution",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-15",
+           "time": "14:13:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "8",
+             "no": "173",
+             "present": "0",
+             "not_voting": "12",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "235",
+             "no": "3",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "243",
+             "no": "176",
+             "present": "0",
+             "not_voting": "14"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "39",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/39.json",
+           "bill_number": "H RES 92",
+           "question": "On Agreeing to the Resolution", 
+           "description": "Providing for consideration of H.R. 1, making appropriations for the Department of Defense and other departments and agencies of the Government for the fiscal year ending September 30, 2011, and for other purposes",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2011-02-15",
+           "time": "14:06:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "8",
+             "no": "174",
+             "present": "0",
+             "not_voting": "11",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "234",
+             "no": "0",
+             "present": "2",
+             "not_voting": "5",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "242",
+             "no": "174",
+             "present": "2",
+             "not_voting": "15"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "38",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/38.json",
+           "bill_number": "H RES 92",
+           "question": "On Ordering the Previous Question", 
+           "description": "Providing for consideration of H.R. 1, making appropriations for the Department of Defense and other departments and agencies of the Government for the fiscal year ending September 30, 2011, and for other purposes",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2011-02-15",
+           "time": "13:55:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "2",
+             "no": "179",
+             "present": "0",
+             "not_voting": "12",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "238",
+             "no": "0",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "240",
+             "no": "179",
+             "present": "0",
+             "not_voting": "14"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "37",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/37.json",
+           "bill_number": "JOURNAL",
+           "question": "On Approving the Journal", 
+           "description": "",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2011-02-14",
+           "time": "19:10:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "132",
+             "no": "49",
+             "present": "0",
+             "not_voting": "12",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "220",
+             "no": "10",
+             "present": "3",
+             "not_voting": "8",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "352",
+             "no": "59",
+             "present": "3",
+             "not_voting": "19"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "36",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/36.json",
+           "bill_number": "H R 514",
+           "question": "On Passage", 
+           "description": "To extend expiring provisions of the USA PATRIOT Improvement and Reauthorization Act of 2005 and Intelligence Reform and Terrorism Prevention Act of 2004 relating to access to business records, individual terrorists as agents of foreign powers, and roving wiretaps until December 8, 2011",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-14",
+           "time": "19:03:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "65",
+             "no": "117",
+             "present": "0",
+             "not_voting": "11",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "210",
+             "no": "27",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "275",
+             "no": "144",
+             "present": "0",
+             "not_voting": "14"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "35",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/35.json",
+           "bill_number": "H R 514",
+           "question": "On Motion to Recommit with Instructions", 
+           "description": "To extend expiring provisions of the USA PATRIOT Improvement and Reauthorization Act of 2005 and Intelligence Reform and Terrorism Prevention Act of 2004 relating to access to business records, individual terrorists as agents of foreign powers, and roving wiretaps until December 8, 2011",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2011-02-14",
+           "time": "18:55:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "184",
+             "no": "0",
+             "present": "0",
+             "not_voting": "9",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "2",
+             "no": "234",
+             "present": "0",
+             "not_voting": "5",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "186",
+             "no": "234",
+             "present": "0",
+             "not_voting": "13"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "34",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/34.json",
+           "bill_number": "JOURNAL",
+           "question": "On Approving the Journal", 
+           "description": "",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2011-02-11",
+           "time": "13:58:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "119",
+             "no": "46",
+             "present": "0",
+             "not_voting": "28",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "225",
+             "no": "4",
+             "present": "1",
+             "not_voting": "11",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "344",
+             "no": "50",
+             "present": "1",
+             "not_voting": "38"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "33",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/33.json",
+           "bill_number": "H RES 72",
+           "question": "On Agreeing to the Resolution", 
+           "description": "Directing certain standing committees to inventory and review existing, pending, and proposed regulations and orders from agencies of the Federal Government, particularly with respect to their effect on jobs and economic growth",
+           "vote_type": "RECORDED VOTE",
+           "date": "2011-02-11",
+           "time": "13:51:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "153",
+             "no": "28",
+             "present": "0",
+             "not_voting": "12",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "238",
+             "no": "0",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "391",
+             "no": "28",
+             "present": "0",
+             "not_voting": "14"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "32",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/32.json",
+           "bill_number": "H RES 72",
+           "question": "On Motion to Recommit with Instructions", 
+           "description": "Directing certain standing committees to inventory and review existing, pending, and proposed regulations and orders from agencies of the Federal Government, particularly with respect to their effect on jobs and economic growth",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2011-02-11",
+           "time": "13:34:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "178",
+             "no": "3",
+             "present": "0",
+             "not_voting": "12",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "0",
+             "no": "239",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "178",
+             "no": "242",
+             "present": "0",
+             "not_voting": "13"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "31",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/31.json",
+           "bill_number": "H RES 73",
+           "question": "On Agreeing to the Resolution", 
+           "description": "Providing for consideration of H. Res. 72, directing certain standing committees to inventory and review existing, pending, and proposed regulations and orders from agencies of the Federal Government, particularly with respect to their effect on jobs and economic growth",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2011-02-10",
+           "time": "15:27:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "18",
+             "no": "169",
+             "present": "0",
+             "not_voting": "6",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "237",
+             "no": "0",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "255",
+             "no": "169",
+             "present": "0",
+             "not_voting": "9"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "30",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/30.json",
+           "bill_number": "H RES 73",
+           "question": "On Ordering the Previous Question", 
+           "description": "Providing for consideration of H. Res. 72, directing certain standing committees to inventory and review existing, pending, and proposed regulations and orders from agencies of the Federal Government, particularly with respect to their effect on jobs and economic growth",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2011-02-10",
+           "time": "15:19:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "6",
+             "no": "180",
+             "present": "0",
+             "not_voting": "7",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "234",
+             "no": "0",
+             "present": "0",
+             "not_voting": "7",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "240",
+             "no": "180",
+             "present": "0",
+             "not_voting": "13"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "29",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/29.json",
+           "bill_number": "H RES 79",
+           "question": "On Agreeing to the Resolution", 
+           "description": "Providing for consideration of H.R. 514, to extend expiring provisions of the USA PATRIOT Improvement and Reauthorization Act of 2005 and Intelligence Reform and Terrorism Prevention Act of 2004",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2011-02-10",
+           "time": "15:11:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "15",
+             "no": "172",
+             "present": "0",
+             "not_voting": "6",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "233",
+             "no": "4",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "248",
+             "no": "176",
+             "present": "0",
+             "not_voting": "9"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "28",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/28.json",
+           "bill_number": "H R 519",
+           "question": "On Motion to Suspend the Rules and Pass", 
+           "description": "United Nations Tax Equalization Refund Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2011-02-09",
+           "time": "14:04:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "23",
+             "no": "167",
+             "present": "0",
+             "not_voting": "3",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "236",
+             "no": "2",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "259",
+             "no": "169",
+             "present": "0",
+             "not_voting": "6"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "27",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/27.json",
+           "bill_number": "S 188",
+           "question": "On Motion to Suspend the Rules and Pass", 
+           "description": "To designate the United States courthouse under construction at 98 West First Street, Yuma, Arizona, as the “John M. Roll United States Courthouse”",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2011-02-09",
+           "time": "13:55:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": "191",
+             "no": "0",
+             "present": "0",
+             "not_voting": "2",
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": "238",
+             "no": "0",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "429",
+             "no": "0",
+             "present": "0",
+             "not_voting": "5"
+            }
+          },                {
+           "congress": "112",
+           "session": "1",
+           "roll_call": "26",
+           "vote_uri": "http://api.nytimes.com/svc/politics/v3/us/legislative/congress/112/house/sessions/1/votes/26.json",
+           "bill_number": "H R 514",
+           "question": "On Motion to Suspend the Rules and Pass", 
+           "description": "To extend expiring provisions of the USA PATRIOT Improvement and Reauthorization Act of 2005 and Intelligence Reform and Terrorism Prevention Act of 2004 relating to access to business records, individual terrorists as agents of foreign powers, and roving wiretaps until December 8, 2011",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2011-02-08",
+           "time": "19:04:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": "67",
+             "no": "122",
+             "present": "0",
+             "not_voting": "4",
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": "210",
+             "no": "26",
+             "present": "0",
+             "not_voting": "6",
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": "0",
+             "no": "0",
+             "present": "0",
+             "not_voting": "0"
+            },
+           "total": {
+             "yes": "277",
+             "no": "148",
+             "present": "0",
+             "not_voting": "9"
+            }
+          }                 ]
+    }
+}
