@@ -75,7 +75,7 @@ class Switchboard extends Backbone.Model
     @trigger('windowResized')
   
   windowScrolled: (ev) =>
-    console.log @centerDate().format("LLLL")
+    #console.log @centerDate().format("LLLL")
     @trigger('windowScrolled')  
 
   # takes a Seconds diff and returns a span of pixels
@@ -110,7 +110,7 @@ class Switchboard extends Backbone.Model
     @setSecondsPerPixel(diff / @windowHeight)
   
   setSecondsPerPixel: (spp) =>
-    console.log spp
+    #console.log spp
     @secondsPerPixel = spp
     @trigger('rescale')
 
