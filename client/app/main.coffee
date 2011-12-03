@@ -74,7 +74,7 @@ class Switchboard extends Backbone.Model
 
   # takes a Seconds diff and returns a span of pixels
   diffToPixels: (diff) =>
-    ~~ (diff / @secondsPerPixel) 
+    Math.floor(diff / @secondsPerPixel) 
 
   # takes a span of pixels and converts to Seconds diff
   pixelsToDiff: (pixels) =>
@@ -99,10 +99,16 @@ class Switchboard extends Backbone.Model
     d
 
   setScreenDiff: (diff) =>
-    @secondsPerPixel = Math.floor(diff / @windowHeight)
-    #@redraw()
+    @setSecondsPerPixel(Math.floor(diff / @windowHeight))
+  
+  setSecondsPerPixel: (spp) =>
+    console.log spp
+    @secondsPerPixel = spp
+    @trigger('rescale')
 
-
+  
+  totalHeight: =>
+    @diffToPixels(@events.diff)
 
 ####
 #### Views
@@ -128,8 +134,106 @@ class EventView extends Backbone.View
     @
 
 
+class Axis extends Backbone.View
+  className: 'Axis'
+
+  initialize: (opts) ->
+    @switchboard = opts.switchboard
+    @switchboard.bind('rescale', @redraw)
+    @render()
+
+  render: =>
+    @paper = Raphael(@el, 100, 100)
+    @redraw()
+    @
+  
+  redraw: =>
+    $el = @$(@el)
+    $el.height(@switchboard.totalHeight())
+
+    #@paper.clear()
+    @paper.clear()
+    @paper.setSize($el.width(), $el.height())
+
+    # Draw Years
+    @drawLabels('years', 'YYYY', 80)
+
+    # Draw Months
+    if @switchboard.screenDiff('months') < 30
+      @drawLabels('months', 'MMMM', 50)
+    
+    # Draw Days
+    if @switchboard.screenDiff('days') < 8
+      @drawLabels('days', 'dddd', 20)
+
+    if @switchboard.screenDiff('hours') < 8
+      @drawLabels('hours', 'H', 20)
+    
+    if @switchboard.screenDiff('minutes') < 10
+      @drawLabels('minutes', '', 20)
+    
+    if @switchboard.screenDiff('seconds') < 10
+      @drawLabels('seconds', '', 20)
 
 
+  drawLabels: (unit, format, line) =>
+    #debugger
+    mmt = @switchboard.events.startDate.clone()
+    point = 0
+    while mmt < @switchboard.events.endDate #and point < @switchboard.windowHeight
+      point = @switchboard.timeToPosition(mmt)
+      path = @paper.path("M0,#{point} H#{line}")
+      path.attr('stroke-width', 2)
+      text = @paper.text(1, point+5, mmt.format(format))
+      text.attr('text-anchor', 'start')    
+      mmt.add(unit, 1)
+
+
+class Controls extends Backbone.View
+  className: 'RaphControls'
+
+  initialize: (opts) ->
+    @switchboard = opts.switchboard
+    @render()
+
+  tmpl: ->
+    div '.slider', ''
+    ul ->
+      li '.century', 'Century'
+      li '.decade', 'Decade'
+      li '.years', 'Year'
+      li '.months', 'Month'
+      li '.weeks', 'Week'
+      li '.days', 'Day'
+      li '.hours', 'Hour'
+      li '.minutes', 'Minute'
+  
+  events:
+    "click li": "setScale"
+  
+  setScale: (ev) ->
+    unit = $(ev.target).attr('class')
+    if unit is 'century'
+      diff = diffFor('years', 100)
+    else if unit is 'decade'
+      diff = diffFor('years', 10)
+    else
+      diff = diffFor(unit, 2)
+
+    @switchboard.setScreenDiff(diff)
+    console.log @switchboard.secondsPerPixel
+    #@$('.slider').slider('value', @switchboard.spp)
+
+  render: =>
+    @$(@el).html CoffeeKup.render(@tmpl)
+    @$('.slider').slider
+      max: 30
+      step: 0.01
+      change: (e, ui) =>
+        v = Math.floor(Math.exp(ui.value))
+        #console.log v
+        @switchboard.setSecondsPerPixel(v)
+    @
 
 #### TimelineView
 class TimelineView extends Backbone.View
@@ -137,6 +241,7 @@ class TimelineView extends Backbone.View
 
   initialize: (opts) ->
     @switchboard = opts.switchboard
+    @switchboard.bind('rescale', @redraw)
     @events = @switchboard.events
     @eventViews = @events.map (event) ->
       new EventView(model: event).render()
@@ -150,7 +255,7 @@ class TimelineView extends Backbone.View
     @
   
   redraw: =>
-    @$(@el).height( @switchboard.diffToPixels(@switchboard.events.diff))
+    @$(@el).height( @switchboard.totalHeight() )
 
     # TODO: move this to TimeGeometry?
     - if true
@@ -165,14 +270,19 @@ class TimelineView extends Backbone.View
 #### Timespace
 
 class Timespace extends Backbone.View
+  className: "Timespace"
   
   initialize: (events) ->
     @events = events
     @switchboard = new Switchboard(events: events)
     @timeline = new TimelineView(switchboard: @switchboard)
+    @axis = new Axis(switchboard: @switchboard)
+    @controls = new Controls(switchboard: @switchboard)
   
   render: =>
     @$(@el).append(@timeline.render().el)
+    @$(@el).append(@axis.render().el)
+    @$(@el).append(@controls.render().el)
     @
 
 
