@@ -1,16 +1,36 @@
-exports.Spacetime = Backbone.Model.extend({
+(function() {
 
-  zeroOut: function(unit) {
-  }
+  var Moment = moment.fn;
 
-}, {
+  var Spacetime = Backbone.Model.extend(
+  // Prototype properties (each instance)
+  {
 
-  getRef: function() {
-    return this._ref;
-  },
+    initialize: function(attributes, options) {
+      console.log(attributes)
+      console.log(options)
+      this._d = new Date()
+    },
 
-  setRef: function(newRef) {
-    this._ref = newRef;
-  }
+    zeroOut: function(unit) {
+    }
 
-})
+  }, 
+  // Constructor function properties (Spacetime class)
+  {
+
+    getRef: function() {
+      return this._ref;
+    },
+
+    setRef: function(newRef) {
+      this._ref = newRef;
+    }
+
+  })
+
+  _.extend(Spacetime.prototype, Moment)
+
+  exports.Spacetime = Spacetime
+
+})()
