@@ -1,3 +1,19 @@
+moment.fn.floor = (unit) ->
+  units = ['seconds', 'minutes', 'hours', 'date', 'months']
+  i = units.indexOf(unit)
+  if i > -1
+    @seconds(0)
+  if i > 0
+    @minutes(0)
+  if i > 1
+    @hours(0)
+  if i > 2
+    @date(1)
+  if i > 3
+    @month(0)
+  @
+
+
 ################################################################
 # Models
 
@@ -39,6 +55,18 @@ class EventCollection extends Backbone.Collection
 
   sorted: ->
     new EventCollection(@sortBy (event) -> event.mmt)
+  
+  between: (start, end) ->
+    new EventCollection(@filter (event) -> 
+      event.mmt > start and event.mmt < end)
+  
+  groupByDate: ->
+    groups = {}
+    @each (event) ->
+      m = event.mmt.clone().floor('hour')
+      groups[m.valueOf()] = event
+    groups
+      
 
 
 
@@ -73,12 +101,29 @@ class ControlsView extends Backbone.View
 
   tmpl: ->
     div '.CenterDate', 'center date'
-    div '.button.zoomout', '-'
-    div '.button.zoomin', '+'
+    select '.grouping', ->
+      option value: 'Minute', 'Minute'
+      option value: 'HalfHour', 'Half Hour'
+      option value: 'Hour', 'Hour'
+      option value: 'HalfDay', 'Half Day'
+      option value: 'Day', 'Day'
+      option value: 'Week', 'Week'
+      option value: 'Month', 'Month'
+      option value: 'QuarterYear', 'Quarter Year'
+      option value: 'HalfYear', 'Half Year'
+      option value: 'Year', 'Year'
+
+    button '.button.zoomout', '-'
+    button '.button.zoomin', '+'
   
   events:
     'click .zoomout': 'zoomout'
     'click .zoomin': 'zoomin'
+    'change .grouping': 'regroup'
+
+  regroup: =>
+    grouping = @$('.grouping').val()
+    console.log grouping
 
   zoomout: =>
     @timeline.setSPP( @timeline.secondsPerPixel * 1.5 )
@@ -104,7 +149,7 @@ class AxisView extends Backbone.View
   dayTicks: (show) =>
     if show is true and not @ticks['Days']
       @ticks["Days"] = true
-      h = @startDate.clone().seconds(0).minutes(0).hours(0).add('days', 1)
+      h = @startDate.clone().floor('hours').add('days', 1)
       while h < @endDate
         @e.append("<div class='Temporal DayMarker' data-mmt='#{h}'>#{h.format('MM/DD')}</div>")
         h.add('days', 1)
@@ -118,7 +163,7 @@ class AxisView extends Backbone.View
     # show hours
     if show is true and not @ticks['Hour']
       @ticks["Hour"] = true
-      h = @startDate.clone().seconds(0).minutes(0).add('hours', 1)
+      h = @startDate.clone().floor('minutes').add('hours', 1)
       while h < @endDate
         unless h.hours() == 0
           @e.append("<div class='Temporal HourMarker' data-mmt='#{h}'>#{h.format('HH:mm')}</div>")
@@ -174,7 +219,7 @@ class TimelineView extends Backbone.View
 
   initialize: (opts) ->
     @e = @$(@el)
-    @secondsPerPixel = opts.secondsPerPixel || 10000
+    @secondsPerPixel = opts.secondsPerPixel || 1000000
     @events = opts.events
 
     @axis = new AxisView(timeline: @)
@@ -236,18 +281,31 @@ $ ->
   window.events = new EventCollection()
   window.timeline = new TimelineView(events: events)
   $('body').append timeline.el
-  
+
+  finished = 0
+  finish = ->
+    finished += 1
+    console.log finished
+    if finished == 2
+      events.prepare()
+      timeline.render()
+      console.log events.groupByDate()
+
+  $.getJSON '/data/tweets.json', (data) ->
+    _.each data.results, (tweet) ->
+      events.add({
+        time: tweet.created_at
+        title: tweet.text
+      })
+    finish()
 
   $.getJSON '/data/votes.json', (data) ->
-
     _.each data.results.votes, (vote) ->
       events.add({
         time: vote.date + ' ' + vote.time
         title: vote.question
       })
+    finish()
     
-    events.prepare()
-    timeline.render()
-
-    
+  moment().floor('hours')
 

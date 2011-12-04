@@ -1,8 +1,6 @@
 *{margin:0;padding:0}
 body{background:#008000;color:#555;min-height:100%}
-.controls{position:fixed;top:0;right:10px;}
-.controls .CenterDate{float:left}
-.controls .button{background:#333;color:#ccc;float:left;padding:10px;cursor:pointer}
+.controls{position:fixed;top:0;right:10px;padding:10px;background:#ccc;width:280px;text-align:center}
 .Temporal{position:absolute}
 .TimelineView{background:#f7f7f7}
 .EventView{position:absolute;border-top:1px solid #333;left:150px;top:140px;padding:10px;}

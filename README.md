@@ -22,9 +22,5 @@ Position DOM elements temporally.
 
 ## Todo
 
-  - take API keys out of app.js
-  - zoom around center line
-  - show centerDate in top left controls
-
   - high level display unit (month, week, day, hour) - elements can be tiled inside of this div
       - EventCollection.eventsInRange(start, end)
