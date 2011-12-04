@@ -21,6 +21,5 @@ Position DOM elements temporally.
   - antiscroll - slick viewport implementation
 
 ## Todo
-
-  - high level display unit (month, week, day, hour) - elements can be tiled inside of this div
-      - EventCollection.eventsInRange(start, end)
+  
+  - 

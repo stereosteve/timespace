@@ -13,6 +13,13 @@ moment.fn.floor = (unit) ->
     @month(0)
   @
 
+window.SECONDS_FOR = 
+  minute: 60
+  hour: 3600
+  day: 84600
+  week: 604800
+  month: 2629743.83
+  year: 31556926
 
 ################################################################
 # Models
@@ -25,8 +32,8 @@ class Event extends Backbone.Model
     
   
   setMmt: =>
-    if @get('date') and @get('time')
-      @mmt = moment(@get('date') + ' ' + @get('time'))
+    if @get('mmt')
+      @mmt = moment(@get('mmt'))
     else if @get('date')
       @mmt = moment(@get('date'))
     else if @get('time')
@@ -63,8 +70,9 @@ class EventCollection extends Backbone.Collection
   groupByDate: ->
     groups = {}
     @each (event) ->
-      m = event.mmt.clone().floor('hour')
-      groups[m.valueOf()] = event
+      key = event.mmt.clone().floor('hours')
+      groups[key.valueOf()] ||= []
+      groups[key.valueOf()].push(event)
     groups
       
 
@@ -79,7 +87,6 @@ class EventView extends Backbone.View
 
   initialize: (options) ->
     @event = @model
-    @parent = options.parent
 
   tmpl: ->
     div '.title', @event.get('title')
@@ -91,6 +98,32 @@ class EventView extends Backbone.View
     $el.attr('data-mmt', @event.mmt)
     @
 
+
+
+## Group View
+class EventTile extends Backbone.View
+  className: 'EventTile'
+  render: =>
+    @$(@el).text(@model.get('title'))
+    @
+
+class GroupView extends Backbone.View
+  className: 'Temporal GroupView'
+
+  initialize: (opts) ->
+    @mmt = opts.mmt
+    @events = opts.events
+
+  render: =>
+    $el = @$(@el)
+    $el.attr('data-mmt', @mmt)
+    for event in @events
+      console.log event
+      $el.append new EventTile(model: event).render().el
+    @
+
+
+##
 
 class ControlsView extends Backbone.View
   
@@ -221,6 +254,7 @@ class TimelineView extends Backbone.View
     @e = @$(@el)
     @secondsPerPixel = opts.secondsPerPixel || 1000000
     @events = opts.events
+    @groups = opts.groups
 
     @axis = new AxisView(timeline: @)
     @controls = new ControlsView(timeline: @)
@@ -231,9 +265,16 @@ class TimelineView extends Backbone.View
     @endDate = @events.endDate
 
     @e.attr 'data-mmt', @startDate
-    @events.each (event) =>
-      view = new EventView(model: event)
-      @e.append(view.render().el)
+
+    #@events.each (event) =>
+    #  view = new EventView(model: event)
+    #  @e.append(view.render().el)
+
+    for mmt in _.keys(@groups)
+      ev = @groups[mmt]
+      groupView = new GroupView(mmt: mmt, events: ev)
+      @e.append(groupView.render().el)
+
     @e.append @axis.render().el
     @e.append @controls.render().el
     @redraw()
@@ -261,14 +302,21 @@ class TimelineView extends Backbone.View
     @axis.render()
     @redraw()
     @windowCenterDate(before)
+  
+  mmtToPixel: (mmt) =>
+    diff = moment(mmt).diff(@events.startDate) 
+    console.log diff
+    diff / @secondsPerPixel
 
   redraw: =>
+    window.spp = @secondsPerPixel
     @e.height( @events.diff / @secondsPerPixel )
     $(".Temporal").each (i, child) =>
       child = $(child)
       mmt = moment(child.data('mmt'))
       yPos = mmt.diff(@events.startDate) / @secondsPerPixel
       child.css 'top', yPos
+    $(".GroupView").height( moment().diff(moment().subtract('days', 1)) / @secondsPerPixel )
     @
 
   
@@ -283,13 +331,17 @@ $ ->
   $('body').append timeline.el
 
   finished = 0
-  finish = ->
+  finish = =>
     finished += 1
-    console.log finished
     if finished == 2
       events.prepare()
+      groups = events.groupByDate()
+
+      timeline.groups = groups
       timeline.render()
-      console.log events.groupByDate()
+        
+      #timeline.redraw()
+
 
   $.getJSON '/data/tweets.json', (data) ->
     _.each data.results, (tweet) ->
@@ -302,7 +354,7 @@ $ ->
   $.getJSON '/data/votes.json', (data) ->
     _.each data.results.votes, (vote) ->
       events.add({
-        time: vote.date + ' ' + vote.time
+        mmt: moment("#{vote.date} #{vote.time}", "YYYY-MM-DD HH:mm:ss")
         title: vote.question
       })
     finish()
