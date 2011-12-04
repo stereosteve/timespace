@@ -15,7 +15,8 @@ var stitchPackage = stitch.createPackage({
     __dirname + '/public/vendor/js/moment.js',
     __dirname + '/public/vendor/js/jqueryui.js',
     __dirname + '/public/vendor/js/coffeekup.js',
-    __dirname + '/public/vendor/js/jquery.mousewheel.js'
+    __dirname + '/public/vendor/js/waypoints.js',
+    __dirname + '/public/vendor/js/jquery.scrollTo.js'
   ]
 })
 
