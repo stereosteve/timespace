@@ -2,9 +2,9 @@ class CoffeeKupView extends Backbone.View
   renderTmpl: (ctx) =>
     @$(@el).html CoffeeKup.render(@tmpl, ctx)
 
-class Tspan extends CoffeeKupView
+class Span extends CoffeeKupView
   
-  className: 'Tspan'
+  className: 'Span'
 
   initialize: (opts) ->
     @mmt = opts.mmt
@@ -30,8 +30,8 @@ class Viewport extends Backbone.View
     # center date
     @centerDate = moment([1984, 1, 22])
     # hold an array of spans
-    @tspans = []
-    window.tspans = @tspans
+    @spans = []
+    window.spans = @spans
     
     @min = -100
     @max = 100
@@ -49,57 +49,57 @@ class Viewport extends Backbone.View
     l = @left.clone()
     r = @right.clone()
     while l < r
-      span = new Tspan(mmt: l.clone())
-      @tspans.push(span)
+      span = new Span(mmt: l.clone())
+      @spans.push(span)
       @j.append(span.render().el)
       l.add('days',1)
     @resetWaypoints()
-    $.scrollTo(@tspans[@tspans.length/2].el)
+    $.scrollTo(@spans[@spans.length/2].el)
     @
 
   resetWaypoints: =>
     $.waypoints().waypoint('destroy')
-    $(@tspans[1].el).waypoint @nearTop
-    $(@tspans[@tspans.length - 10].el).waypoint @nearBottom
+    $(@spans[1].el).waypoint @nearTop
+    $(@spans[@spans.length - 10].el).waypoint @nearBottom
     console.log $.waypoints()
 
   nearTop: (ev, direction) =>
     if direction == 'up'
       console.log 'near top'
-      @prependTspan(true) for i in [1..10]
+      @prependSpan(true) for i in [1..10]
       @resetWaypoints()
       $.scrollTo(ev.target)
 
   nearBottom: (ev, direction) =>
     if direction == 'down'
       console.log 'near bottom'
-      @appendTspan(true) for i in [1..10]
+      @appendSpan(true) for i in [1..10]
       @resetWaypoints()
       $.scrollTo(ev.target)
 
 
 
 
-  prependTspan: (removeOne) =>
+  prependSpan: (removeOne) =>
     @left.subtract('days', 1)
     console.log "prepending "+@left.format("LL")
-    span = new Tspan(mmt: @left.clone())
-    @tspans.unshift(span)
+    span = new Span(mmt: @left.clone())
+    @spans.unshift(span)
     @j.prepend(span.render().el)
     #@$(span.el).waypoint(@scrolled)
     
     if removeOne
-      last = @tspans.pop()
+      last = @spans.pop()
       @$(last.el).remove()
   
-  appendTspan: (removeOne) =>
+  appendSpan: (removeOne) =>
     @right.add('days', 1)
     console.log "appending "+@right.format("LL")
-    span = new Tspan(mmt: @right.clone())
-    @tspans.push(span)
+    span = new Span(mmt: @right.clone())
+    @spans.push(span)
     @j.append(span.render().el)
     if removeOne
-      first = @tspans.shift()
+      first = @spans.shift()
       @$(first.el).remove()
 
 
