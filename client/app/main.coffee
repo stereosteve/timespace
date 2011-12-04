@@ -72,6 +72,7 @@ class ControlsView extends Backbone.View
     @timeline = opts.timeline
 
   tmpl: ->
+    div '.CenterDate', 'center date'
     div '.button.zoomout', '-'
     div '.button.zoomin', '+'
   
@@ -175,26 +176,46 @@ class TimelineView extends Backbone.View
     @e = @$(@el)
     @secondsPerPixel = opts.secondsPerPixel || 10000
     @events = opts.events
-    #@events.bind('all', @render)
 
     @axis = new AxisView(timeline: @)
     @controls = new ControlsView(timeline: @)
     
 
   render: =>
-    @e.attr 'data-mmt', @events.startDate
+    @startDate = @events.startDate
+    @endDate = @events.endDate
+
+    @e.attr 'data-mmt', @startDate
     @events.each (event) =>
       view = new EventView(model: event)
       @e.append(view.render().el)
     @e.append @axis.render().el
     @e.append @controls.render().el
     @redraw()
+
+    @windowScroll()
+    $(window).scroll @windowScroll
   
-  setSPP: (spp) ->
+  windowScroll: (ev) =>
+    m = @windowCenterDate()
+    @$('.CenterDate').text(m.format('LLLL'))
+  
+  windowCenterDate: (d) =>
+    $w = $(window)
+    if d
+      diff = moment(d).diff(@startDate)
+      pixel = diff / @secondsPerPixel
+      $w.scrollTop(pixel - $w.height()/2)
+    else
+      d = $w.scrollTop() + $w.height()/2
+      m = moment( @startDate + d * @secondsPerPixel )
+  
+  setSPP: (spp) =>
+    before = @windowCenterDate()
     @secondsPerPixel = spp
-    console.log spp
     @axis.render()
     @redraw()
+    @windowCenterDate(before)
 
   redraw: =>
     @e.height( @events.diff / @secondsPerPixel )
@@ -220,7 +241,6 @@ $ ->
   $.getJSON '/data/votes.json', (data) ->
 
     _.each data.results.votes, (vote) ->
-      console.log vote.question
       events.add({
         time: vote.date + ' ' + vote.time
         title: vote.question

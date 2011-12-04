@@ -1,6 +1,7 @@
 *{margin:0;padding:0}
 body{background:#008000;color:#555;min-height:100%}
 .controls{position:fixed;top:0;right:10px;}
+.controls .CenterDate{float:left}
 .controls .button{background:#333;color:#ccc;float:left;padding:10px;cursor:pointer}
 .Temporal{position:absolute}
 .TimelineView{background:#f7f7f7}
