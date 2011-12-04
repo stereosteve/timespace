@@ -10,17 +10,21 @@ class Span extends CoffeeKupView
 
   initialize: (opts) ->
     @mmt = opts.mmt
+    @units = opts.units
 
   tmpl: ->
-    h2 @mmt.format('LL')
+    h2 @fmt
+
+  fmt: =>
+    @mmt.format 'LL' if @units == 'days'
+    @mmt.format 'LLLL' if @units == 'hours'
 
   render: =>
-    @renderTmpl(mmt: @mmt)
+    @renderTmpl(mmt: @mmt, fmt: @fmt())
     @$(@el).attr('data-mmt', @mmt)
-    @$(@el).attr('data-date', @mmt.format('LL'))
+    @$(@el).attr('data-date', @fmt())
     @
     
-
 
 class Viewport extends Backbone.View
 
@@ -30,6 +34,7 @@ class Viewport extends Backbone.View
     @j = @$(@el)
     @spans = []
     @center = moment([1984, 1, 22])
+    @units = 'hours'
   
   render: =>
     @left = @center.clone()
@@ -43,35 +48,34 @@ class Viewport extends Backbone.View
 
   spanScrolled: (ev, direction) =>
     mmt = moment($(ev.target).data('mmt'))
-    #console.log mmt.format('LL')
-    if direction == 'up' and mmt.diff(@left, 'days') < 10
+    if direction == 'up' and mmt.diff(@left, @units) < 10
       @prependSpan(true) for i in [1..10]
       $.scrollTo(ev.target, offset: -1 * $(window).height()/2)
       @resetWaypoints()
 
-    if direction == 'down' and @right.diff(mmt, 'days') < 10
+    if direction == 'down' and @right.diff(mmt, @units) < 10
       @appendSpan(true) for i in [1..10]
       $.scrollTo(ev.target, offset: -1 * $(window).height()/2)
       @resetWaypoints()
 
   prependSpan: (removeOne) =>
-    @left.subtract('days', 1)
-    span = new Span(mmt: @left.clone())
+    @left.subtract(@units, 1)
+    span = new Span(mmt: @left.clone(), units: @units)
     @spans.unshift(span)
     @j.prepend(span.render().el)
 
     if removeOne
-      @right.subtract('days', 1)
+      @right.subtract(@units, 1)
       @$(@spans.pop().el).remove()
   
   appendSpan: (removeOne) =>
-    @right.add('days', 1)
-    span = new Span(mmt: @right.clone())
+    @right.add(@units, 1)
+    span = new Span(mmt: @right.clone(), units: @units)
     @spans.push(span)
     @j.append(span.render().el)
 
     if removeOne
-      @left.add('days', 1)
+      @left.add(@units, 1)
       @$(@spans.shift().el).remove()
 
   gotoCenter: =>
