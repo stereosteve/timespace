@@ -10,6 +10,6 @@ moment.fn.zeroOut = (unit) ->
     @hours(0)
   if i > 3
     @date(1)
-  if i > 4
+  if i > 5
     @month(0)
   @

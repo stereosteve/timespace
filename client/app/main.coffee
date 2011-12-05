@@ -12,15 +12,16 @@ $ ->
     console.log events.mean().mmt
     viewport.render()
 
-  $.getJSON '/data/tweets.json', (data) ->
-    _.each data.results, (tweet) ->
-      events.add({
-        time: tweet.created_at
-        title: tweet.text
-      })
-    go()
-
   if false
+    $.getJSON '/data/tweets.json', (data) ->
+      _.each data.results, (tweet) ->
+        events.add({
+          time: tweet.created_at
+          title: tweet.text
+        })
+      go()
+
+  if true
     $.getJSON '/data/votes.json', (data) ->
       _.each data.results.votes, (vote) ->
         events.add({

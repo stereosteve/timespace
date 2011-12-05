@@ -158,8 +158,8 @@ class Viewport extends Backbone.View
     span = new Span(mmt: mmt, units: @units, collection: events)
 
   gotoCenter: =>
-    centerSpan = @spans[@spans.length/2]
-    $.scrollTo(centerSpan.el, 100, {offset: -1 * $(window).height()/2})
+    c = $("[data-mmt="+@center+"]")
+    $.scrollTo(c, 1)
 
 exports.Viewport = Viewport
 
