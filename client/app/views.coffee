@@ -100,7 +100,7 @@ class Viewport extends Backbone.View
   render: =>
     @spans = []
     @j.empty()
-    @center = @collection.mean().mmt.clone().zeroOut(@units)
+    @center = @collection.mean().mmt.clone().floor(@units)
     @left = @center.clone()
     @right = @center.clone().subtract(@units,1)
     @prependSpan() for i in [1..50]

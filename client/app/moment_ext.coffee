@@ -1,15 +1,27 @@
 
-moment.fn.zeroOut = (unit) ->
-  units = ['seconds', 'minutes', 'hours', 'days', 'weeks', 'months', 'years']
-  i = units.indexOf(unit)
-  if i > -1
-    @seconds(0)
-  if i > 0
-    @minutes(0)
-  if i > 1
-    @hours(0)
-  if i > 3
-    @date(1)
-  if i > 5
-    @month(0)
-  @
+moment.fn.floor = (unit) ->
+  mmt = @
+  fl =
+    minute: ->
+      mmt.seconds(0)
+    hour: ->
+      fl['minute']()
+      mmt.minutes(0)
+    day: ->
+      fl['hour']()
+      mmt.hours(0)
+    week: ->
+      fl['day']()
+      # TODO: set day of week to sunday / monday?
+    month: ->
+      fl['day']()
+      mmt.date(1)
+    year: ->
+      fl['month']()
+      mmt.month(0)
+
+
+  unit = unit.replace(/s$/i, '')
+  unit = 'day' if unit == 'date'
+  fl[unit]()
+
