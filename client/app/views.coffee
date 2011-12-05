@@ -42,6 +42,11 @@ class Span extends CoffeeKupView
     @j.attr('data-mmt', @mmt)
     @j.attr('data-date', @fmt())
     @
+
+  mason: =>
+    @$('.tiles').masonry()
+    @
+
     
 class Controls extends CoffeeKupView
   className: 'Controls'
@@ -130,6 +135,7 @@ class Viewport extends Backbone.View
     span = @makeSpan(@left)
     @spans.unshift(span)
     @j.prepend(span.render().el)
+    span.mason()
 
     if removeOne
       @right.subtract(@units, 1)
@@ -140,6 +146,7 @@ class Viewport extends Backbone.View
     span = @makeSpan(@right)
     @spans.push(span)
     @j.append(span.render().el)
+    span.mason()
 
     if removeOne
       @left.add(@units, 1)

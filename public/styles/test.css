@@ -1,8 +1,8 @@
 *{margin:0;padding:0}
 body{min-height:100%;background:#f7f7f7}
-.Controls{position:fixed;top:0;right:10px;background:#ccc;padding:5px;width:200px;text-align:center}
+.Controls{position:fixed;top:0;right:10px;background:#ccc;padding:5px;width:200px;text-align:center;z-index:2}
 .Span{min-height:100px;border-top:1px solid #181818;overflow:auto;padding:15px 0;}
 .Span h2{float:left;width:200px}
 .Span .tiles{margin-left:220px}
-.Span .Tile{background:#fff;float:left;width:200px;padding:5px;margin:5px;border:1px solid #ccc}
+.Span .Tile{background:#fff;float:left;width:250px;padding:5px;margin:5px;border:1px solid #ccc}
 .CurrentPosition{position:fixed;top:0;right:10px}

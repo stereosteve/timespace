@@ -12,10 +12,19 @@ $ ->
     console.log events.mean().mmt
     viewport.render()
 
-  $.getJSON '/data/votes.json', (data) ->
-    _.each data.results.votes, (vote) ->
+  $.getJSON '/data/tweets.json', (data) ->
+    _.each data.results, (tweet) ->
       events.add({
-        mmt: moment("#{vote.date} #{vote.time}", "YYYY-M-DD HH:mm:ss")
-        title: vote.question
+        time: tweet.created_at
+        title: tweet.text
       })
     go()
+
+  if false
+    $.getJSON '/data/votes.json', (data) ->
+      _.each data.results.votes, (vote) ->
+        events.add({
+          mmt: moment("#{vote.date} #{vote.time}", "YYYY-M-DD HH:mm:ss")
+          title: vote.question
+        })
+      go()
